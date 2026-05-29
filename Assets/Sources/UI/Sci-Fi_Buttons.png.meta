@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 8ae61c8cb546b4948af233ab7dea1956
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 927695917649160261
+    second: Sci-Fi_Buttons_0
+  - first:
+      213: 7313618590665758010
+    second: Sci-Fi_Buttons_1
+  - first:
+      213: -8570665339820427454
+    second: Sci-Fi_Buttons_2
+  - first:
+      213: -4402076805884347142
+    second: Sci-Fi_Buttons_3
+  - first:
+      213: 9125633891781502038
+    second: Sci-Fi_Buttons_4
+  - first:
+      213: -4277350254873034466
+    second: Sci-Fi_Buttons_5
+  - first:
+      213: 2217326750497592914
+    second: Sci-Fi_Buttons_6
+  - first:
+      213: 896064260931355558
+    second: Sci-Fi_Buttons_7
+  - first:
+      213: -2727680147312944534
+    second: Sci-Fi_Buttons_8
+  - first:
+      213: 6355335677713603191
+    second: Sci-Fi_Buttons_9
+  - first:
+      213: -2305845201733474741
+    second: Sci-Fi_Buttons_10
+  - first:
+      213: 544165955119448671
+    second: Sci-Fi_Buttons_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 225
+        width: 145
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 548ee0f9586dfdc00800000000000000
+      internalID: 927695917649160261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 221
+        width: 80
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a355357eb513f7560800000000000000
+      internalID: 7313618590665758010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 226
+        width: 128
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24730436841ee0980800000000000000
+      internalID: -8570665339820427454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 156
+        width: 145
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afcf64fd77ea8e2c0800000000000000
+      internalID: -4402076805884347142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 139
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654e6e5cca3c4ae70800000000000000
+      internalID: 9125633891781502038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 157
+        width: 128
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11cd560b9cc3a4c0800000000000000
+      internalID: -4277350254873034466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_6
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 76
+        width: 132
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25651628ee685ce10800000000000000
+      internalID: 2217326750497592914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 73
+        width: 135
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a38cb0a2b57f6c00800000000000000
+      internalID: 896064260931355558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_8
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 77
+        width: 124
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ad68e9b55552ad0800000000000000
+      internalID: -2727680147312944534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_9
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 8
+        width: 131
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a5c7a7020b23850800000000000000
+      internalID: 6355335677713603191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_10
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 3
+        width: 134
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4623a3810effffd0800000000000000
+      internalID: -2305845201733474741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sci-Fi_Buttons_11
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 8
+        width: 125
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5281c59d044d8700800000000000000
+      internalID: 544165955119448671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sci-Fi_Buttons_0: 927695917649160261
+      Sci-Fi_Buttons_1: 7313618590665758010
+      Sci-Fi_Buttons_10: -2305845201733474741
+      Sci-Fi_Buttons_11: 544165955119448671
+      Sci-Fi_Buttons_2: -8570665339820427454
+      Sci-Fi_Buttons_3: -4402076805884347142
+      Sci-Fi_Buttons_4: 9125633891781502038
+      Sci-Fi_Buttons_5: -4277350254873034466
+      Sci-Fi_Buttons_6: 2217326750497592914
+      Sci-Fi_Buttons_7: 896064260931355558
+      Sci-Fi_Buttons_8: -2727680147312944534
+      Sci-Fi_Buttons_9: 6355335677713603191
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
