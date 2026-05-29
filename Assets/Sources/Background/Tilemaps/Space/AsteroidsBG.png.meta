@@ -1,0 +1,2717 @@
+fileFormatVersion: 2
+guid: 755a6a7792623c643bca97c8b0249f22
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5644126305644850731
+    second: AsteroidsBG_0
+  - first:
+      213: -4738240091120956405
+    second: AsteroidsBG_1
+  - first:
+      213: 3241739026844132245
+    second: AsteroidsBG_2
+  - first:
+      213: -459699762730840503
+    second: AsteroidsBG_3
+  - first:
+      213: 5912550011080410121
+    second: AsteroidsBG_4
+  - first:
+      213: 830453578573181773
+    second: AsteroidsBG_5
+  - first:
+      213: 2371552187143322205
+    second: AsteroidsBG_6
+  - first:
+      213: 6531125862943616986
+    second: AsteroidsBG_7
+  - first:
+      213: -4726614687020783567
+    second: AsteroidsBG_8
+  - first:
+      213: 7736322114493519111
+    second: AsteroidsBG_9
+  - first:
+      213: -3900703202856308413
+    second: AsteroidsBG_10
+  - first:
+      213: 6786991635798322641
+    second: AsteroidsBG_11
+  - first:
+      213: -1176422013566824763
+    second: AsteroidsBG_12
+  - first:
+      213: 3442608943604560402
+    second: AsteroidsBG_13
+  - first:
+      213: 5755639867478243372
+    second: AsteroidsBG_14
+  - first:
+      213: -4005458860805227941
+    second: AsteroidsBG_15
+  - first:
+      213: -1416504747927375504
+    second: AsteroidsBG_16
+  - first:
+      213: 5055881124132368093
+    second: AsteroidsBG_17
+  - first:
+      213: 1305521966164854875
+    second: AsteroidsBG_18
+  - first:
+      213: 1862795257659872971
+    second: AsteroidsBG_19
+  - first:
+      213: 3675162046764674975
+    second: AsteroidsBG_20
+  - first:
+      213: -6523390909828440447
+    second: AsteroidsBG_21
+  - first:
+      213: -2971244811945467607
+    second: AsteroidsBG_22
+  - first:
+      213: -5558132962627143078
+    second: AsteroidsBG_23
+  - first:
+      213: 3423228044146931668
+    second: AsteroidsBG_24
+  - first:
+      213: -2215964281376016114
+    second: AsteroidsBG_25
+  - first:
+      213: 6496652952990742858
+    second: AsteroidsBG_26
+  - first:
+      213: -1526748443696448266
+    second: AsteroidsBG_27
+  - first:
+      213: -5905374735588475110
+    second: AsteroidsBG_28
+  - first:
+      213: 8894728420178713758
+    second: AsteroidsBG_29
+  - first:
+      213: -3209275133022146285
+    second: AsteroidsBG_30
+  - first:
+      213: 6744120298346252056
+    second: AsteroidsBG_31
+  - first:
+      213: 1201627477730523168
+    second: AsteroidsBG_32
+  - first:
+      213: 6558052653520156319
+    second: AsteroidsBG_33
+  - first:
+      213: -1092398072293355612
+    second: AsteroidsBG_34
+  - first:
+      213: 4010180854057512272
+    second: AsteroidsBG_35
+  - first:
+      213: -276219597624685037
+    second: AsteroidsBG_36
+  - first:
+      213: -7944356608260052745
+    second: AsteroidsBG_37
+  - first:
+      213: 6370590425256941457
+    second: AsteroidsBG_38
+  - first:
+      213: -783495963634320463
+    second: AsteroidsBG_39
+  - first:
+      213: 5444698708330254402
+    second: AsteroidsBG_40
+  - first:
+      213: -4703766626063471484
+    second: AsteroidsBG_41
+  - first:
+      213: -1653022299868846280
+    second: AsteroidsBG_42
+  - first:
+      213: 196443593764291988
+    second: AsteroidsBG_43
+  - first:
+      213: -9047910247125165304
+    second: AsteroidsBG_44
+  - first:
+      213: -903650235431181612
+    second: AsteroidsBG_45
+  - first:
+      213: -231396877567938764
+    second: AsteroidsBG_46
+  - first:
+      213: -1273159529864226723
+    second: AsteroidsBG_47
+  - first:
+      213: 2301705522766318202
+    second: AsteroidsBG_48
+  - first:
+      213: -2732739167011334590
+    second: AsteroidsBG_49
+  - first:
+      213: -6485199499549922814
+    second: AsteroidsBG_50
+  - first:
+      213: -8850287092259401626
+    second: AsteroidsBG_51
+  - first:
+      213: -3725455733455925857
+    second: AsteroidsBG_52
+  - first:
+      213: -1507429558466047192
+    second: AsteroidsBG_53
+  - first:
+      213: -2843529016691255431
+    second: AsteroidsBG_54
+  - first:
+      213: 1577610001062735656
+    second: AsteroidsBG_55
+  - first:
+      213: -7356285501428159790
+    second: AsteroidsBG_56
+  - first:
+      213: 7719852563502594148
+    second: AsteroidsBG_57
+  - first:
+      213: 3895570999177726976
+    second: AsteroidsBG_58
+  - first:
+      213: -3005651686432838688
+    second: AsteroidsBG_59
+  - first:
+      213: -5200798197642190838
+    second: AsteroidsBG_60
+  - first:
+      213: -4091484969169517051
+    second: AsteroidsBG_61
+  - first:
+      213: -3623463813176864848
+    second: AsteroidsBG_62
+  - first:
+      213: 6911370048963702612
+    second: AsteroidsBG_63
+  - first:
+      213: -9073207176265369681
+    second: AsteroidsBG_64
+  - first:
+      213: -7206113210824129237
+    second: AsteroidsBG_65
+  - first:
+      213: -5148468168544783205
+    second: AsteroidsBG_66
+  - first:
+      213: -4711194266556613695
+    second: AsteroidsBG_67
+  - first:
+      213: 1465529155469332497
+    second: AsteroidsBG_68
+  - first:
+      213: -5907386844566967940
+    second: AsteroidsBG_69
+  - first:
+      213: 5167405748481840563
+    second: AsteroidsBG_70
+  - first:
+      213: -3459117799656131031
+    second: AsteroidsBG_71
+  - first:
+      213: 8078255442071515229
+    second: AsteroidsBG_72
+  - first:
+      213: -2577034822836766903
+    second: AsteroidsBG_73
+  - first:
+      213: 6624525668952579938
+    second: AsteroidsBG_74
+  - first:
+      213: -9152216838100217935
+    second: AsteroidsBG_75
+  - first:
+      213: -7278995341498748020
+    second: AsteroidsBG_76
+  - first:
+      213: -7065775652572363244
+    second: AsteroidsBG_77
+  - first:
+      213: 2437420595517040537
+    second: AsteroidsBG_78
+  - first:
+      213: -2871169737666843838
+    second: AsteroidsBG_79
+  - first:
+      213: -7954183287278947518
+    second: AsteroidsBG_80
+  - first:
+      213: -6502154753005221887
+    second: AsteroidsBG_81
+  - first:
+      213: -7649982559396077597
+    second: AsteroidsBG_82
+  - first:
+      213: 2014609888390444701
+    second: AsteroidsBG_83
+  - first:
+      213: 1178726185169302307
+    second: AsteroidsBG_84
+  - first:
+      213: -8098147089765155745
+    second: AsteroidsBG_85
+  - first:
+      213: -4252555751092232141
+    second: AsteroidsBG_86
+  - first:
+      213: 940320723920481940
+    second: AsteroidsBG_87
+  - first:
+      213: 8515471274459655000
+    second: AsteroidsBG_88
+  - first:
+      213: -7824608555460804069
+    second: AsteroidsBG_89
+  - first:
+      213: 2916291855980451517
+    second: AsteroidsBG_90
+  - first:
+      213: 6051371547140607294
+    second: AsteroidsBG_91
+  - first:
+      213: 6621285280244115993
+    second: AsteroidsBG_92
+  - first:
+      213: -1646917445408554523
+    second: AsteroidsBG_93
+  - first:
+      213: -6731423939888644733
+    second: AsteroidsBG_94
+  - first:
+      213: 5547917405600524752
+    second: AsteroidsBG_95
+  - first:
+      213: -8302833867452304656
+    second: AsteroidsBG_96
+  - first:
+      213: -3325866857173896614
+    second: AsteroidsBG_97
+  - first:
+      213: -5424234342025823755
+    second: AsteroidsBG_98
+  - first:
+      213: -3801491336846592676
+    second: AsteroidsBG_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2048
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AsteroidsBG_0
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 3877
+        width: 79
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1d99467090ca1b0800000000000000
+      internalID: -5644126305644850731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_1
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 3911
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c883ccdb36e3eb0800000000000000
+      internalID: -4738240091120956405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_2
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 3879
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 593a09d2878fcfc20800000000000000
+      internalID: 3241739026844132245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_3
+      rect:
+        serializedVersion: 2
+        x: 2090
+        y: 3784
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ec81b5081de99f0800000000000000
+      internalID: -459699762730840503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_4
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3692
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9040e27b8e89d0250800000000000000
+      internalID: 5912550011080410121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_5
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 3641
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d437e49312d568b00800000000000000
+      internalID: 830453578573181773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 3532
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5a7af0362279e020800000000000000
+      internalID: 2371552187143322205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_7
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 3535
+        width: 75
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfee147e5833aa50800000000000000
+      internalID: 6531125862943616986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_8
+      rect:
+        serializedVersion: 2
+        x: 3382
+        y: 3552
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1386bfd1cf0b76eb0800000000000000
+      internalID: -4726614687020783567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_9
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 3522
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705926e69ffec5b60800000000000000
+      internalID: 7736322114493519111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_10
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 3411
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34175839a1bedd9c0800000000000000
+      internalID: -3900703202856308413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_11
+      rect:
+        serializedVersion: 2
+        x: 3309
+        y: 3410
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd6e490fec303e50800000000000000
+      internalID: 6786991635798322641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_12
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 3393
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce466f59628cafe0800000000000000
+      internalID: -1176422013566824763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_13
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 3326
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212f120389a96cf20800000000000000
+      internalID: 3442608943604560402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_14
+      rect:
+        serializedVersion: 2
+        x: 2683
+        y: 3310
+        width: 47
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28fd1cf6f320ef40800000000000000
+      internalID: 5755639867478243372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_15
+      rect:
+        serializedVersion: 2
+        x: 3740
+        y: 3291
+        width: 76
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a734f4360c968c0800000000000000
+      internalID: -4005458860805227941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 3226
+        width: 78
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071722dcf60975ce0800000000000000
+      internalID: -1416504747927375504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_17
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 3239
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde238e58191a2640800000000000000
+      internalID: 5055881124132368093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_18
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 3216
+        width: 71
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58c9bfaf452e1210800000000000000
+      internalID: 1305521966164854875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_19
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 2997
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc65916da6af9d910800000000000000
+      internalID: 1862795257659872971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_20
+      rect:
+        serializedVersion: 2
+        x: 2542
+        y: 2892
+        width: 73
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9fe761e86cc00330800000000000000
+      internalID: 3675162046764674975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_21
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2849
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ed9a8a7824875a0800000000000000
+      internalID: -6523390909828440447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_22
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 2816
+        width: 71
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921a44bf59404c6d0800000000000000
+      internalID: -2971244811945467607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_23
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 2851
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a383cc48b8dd2b0800000000000000
+      internalID: -5558132962627143078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_24
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 2773
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d77884e4cfb18f20800000000000000
+      internalID: 3423228044146931668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_25
+      rect:
+        serializedVersion: 2
+        x: 3666
+        y: 2783
+        width: 51
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09f0ad0a305f31e0800000000000000
+      internalID: -2215964281376016114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_26
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 2706
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a497104a07fb82a50800000000000000
+      internalID: 6496652952990742858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_27
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 2709
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fcb7182166efcae0800000000000000
+      internalID: -1526748443696448266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_28
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 2555
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1fbeab47f4eb0ea0800000000000000
+      internalID: -5905374735588475110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_29
+      rect:
+        serializedVersion: 2
+        x: 3694
+        y: 2577
+        width: 86
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9cd2523f5c607b70800000000000000
+      internalID: 8894728420178713758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_30
+      rect:
+        serializedVersion: 2
+        x: 2270
+        y: 2548
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31178bd154d5673d0800000000000000
+      internalID: -3209275133022146285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_31
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 2519
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8170e61fdade79d50800000000000000
+      internalID: 6744120298346252056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_32
+      rect:
+        serializedVersion: 2
+        x: 3792
+        y: 2473
+        width: 73
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028f97213d90da010800000000000000
+      internalID: 1201627477730523168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_33
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 2513
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96706f6422e20b50800000000000000
+      internalID: 6558052653520156319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_34
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 2439
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af02a3bdb507d0f0800000000000000
+      internalID: -1092398072293355612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_35
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2382
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05dab2b6d3607a730800000000000000
+      internalID: 4010180854057512272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_36
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2288
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e449b4dbbaa2cf0800000000000000
+      internalID: -276219597624685037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_37
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 2281
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8e1ab71c9ffb190800000000000000
+      internalID: -7944356608260052745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_38
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 2246
+        width: 73
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197d1fa2d32e86850800000000000000
+      internalID: 6370590425256941457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_39
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 2219
+        width: 51
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bbbf9c72967025f0800000000000000
+      internalID: -783495963634320463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_40
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 2213
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2409d03c0a47f8b40800000000000000
+      internalID: 5444698708330254402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_41
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 2229
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c262bdc2dd8beb0800000000000000
+      internalID: -4703766626063471484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_42
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 2211
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837a482f9f84f09e0800000000000000
+      internalID: -1653022299868846280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_43
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 2134
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495c8b06868e9b200800000000000000
+      internalID: 196443593764291988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_44
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 2108
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bdc70719d5f6280800000000000000
+      internalID: -9047910247125165304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_45
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 1990
+        width: 86
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d22deb06e69573f0800000000000000
+      internalID: -903650235431181612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_46
+      rect:
+        serializedVersion: 2
+        x: 3866
+        y: 2068
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43fad6e04c9e9ccf0800000000000000
+      internalID: -231396877567938764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_47
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1897
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d581a003724d45ee0800000000000000
+      internalID: -1273159529864226723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_48
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 1977
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a8a0e5afc41ff10800000000000000
+      internalID: 2301705522766318202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_49
+      rect:
+        serializedVersion: 2
+        x: 3789
+        y: 1922
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2461e7ec43c531ad0800000000000000
+      internalID: -2732739167011334590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_50
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 1865
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a29cb4a61fff5a0800000000000000
+      internalID: -6485199499549922814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_51
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 1749
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66057a9c7c67d2580800000000000000
+      internalID: -8850287092259401626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_52
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 1718
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9dcaecafb58c4cc0800000000000000
+      internalID: -3725455733455925857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_53
+      rect:
+        serializedVersion: 2
+        x: 3139
+        y: 1707
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82315b3adc8841be0800000000000000
+      internalID: -1507429558466047192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_54
+      rect:
+        serializedVersion: 2
+        x: 2381
+        y: 1698
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9771a9bcc61c988d0800000000000000
+      internalID: -2843529016691255431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_55
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1632
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fa27bffebc4e510800000000000000
+      internalID: 1577610001062735656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_56
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1624
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2daa40dcf4939e990800000000000000
+      internalID: -7356285501428159790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_57
+      rect:
+        serializedVersion: 2
+        x: 3971
+        y: 1645
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468f5f5410d622b60800000000000000
+      internalID: 7719852563502594148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_58
+      rect:
+        serializedVersion: 2
+        x: 2682
+        y: 1595
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c4d432f29df0630800000000000000
+      internalID: 3895570999177726976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_59
+      rect:
+        serializedVersion: 2
+        x: 2217
+        y: 1544
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebed9f37b7c946d0800000000000000
+      internalID: -3005651686432838688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_60
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1444
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a00ab01289d03d7b0800000000000000
+      internalID: -5200798197642190838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_61
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 1407
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5060dc029102837c0800000000000000
+      internalID: -4091484969169517051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_62
+      rect:
+        serializedVersion: 2
+        x: 3556
+        y: 1457
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf4c1f1cded6bdc0800000000000000
+      internalID: -3623463813176864848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_63
+      rect:
+        serializedVersion: 2
+        x: 3895
+        y: 1440
+        width: 71
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f61c7017e1aef50800000000000000
+      internalID: 6911370048963702612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_64
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 1415
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa77d25252e751280800000000000000
+      internalID: -9073207176265369681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_65
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1392
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b250491e63ebefb90800000000000000
+      internalID: -7206113210824129237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_66
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 1323
+        width: 70
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b947b7c7a77fc88b0800000000000000
+      internalID: -5148468168544783205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_67
+      rect:
+        serializedVersion: 2
+        x: 3705
+        y: 1373
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb390a86c97e9eb0800000000000000
+      internalID: -4711194266556613695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_68
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1365
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1105abf800b965410800000000000000
+      internalID: 1465529155469332497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_69
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1303
+        width: 45
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7925caa6feb40ea0800000000000000
+      internalID: -5907386844566967940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_70
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1242
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b55290762056b740800000000000000
+      internalID: 5167405748481840563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_71
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 1286
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926f34b30bebeffc0800000000000000
+      internalID: -3459117799656131031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_72
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 1198
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50f98d268abb1070800000000000000
+      internalID: 8078255442071515229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_73
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 1154
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947b00b7b788c3cd0800000000000000
+      internalID: -2577034822836766903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_74
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 1113
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26f10676ffa0feb50800000000000000
+      internalID: 6624525668952579938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_75
+      rect:
+        serializedVersion: 2
+        x: 3111
+        y: 1097
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf00b9b64bccf080800000000000000
+      internalID: -9152216838100217935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_76
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1033
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c837e3c7d40dbfa90800000000000000
+      internalID: -7278995341498748020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_77
+      rect:
+        serializedVersion: 2
+        x: 3418
+        y: 1031
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41602d5ea7251fd90800000000000000
+      internalID: -7065775652572363244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_78
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 978
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997a30c1e1573d120800000000000000
+      internalID: 2437420595517040537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_79
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 936
+        width: 76
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b2480f55e8728d0800000000000000
+      internalID: -2871169737666843838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_80
+      rect:
+        serializedVersion: 2
+        x: 2671
+        y: 892
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243b36b71701d9190800000000000000
+      internalID: -7954183287278947518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_81
+      rect:
+        serializedVersion: 2
+        x: 2901
+        y: 878
+        width: 80
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1088188b3b4b3c5a0800000000000000
+      internalID: -6502154753005221887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_82
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 724
+        width: 72
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef5341c46dc5d590800000000000000
+      internalID: -7649982559396077597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_83
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 709
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d967086050555fb10800000000000000
+      internalID: 2014609888390444701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_84
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 677
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323b772683dab5010800000000000000
+      internalID: 1178726185169302307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_85
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 717
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c3fafa02a9d9f80800000000000000
+      internalID: -8098147089765155745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_86
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 721
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3306a9c4313ebf4c0800000000000000
+      internalID: -4252555751092232141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_87
+      rect:
+        serializedVersion: 2
+        x: 3436
+        y: 644
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ee73467b0bc0d00800000000000000
+      internalID: 940320723920481940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_88
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 679
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85be539d1080d2670800000000000000
+      internalID: 8515471274459655000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_89
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 666
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12c641b9f7696390800000000000000
+      internalID: -7824608555460804069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_90
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 515
+        width: 78
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db65419edffb87820800000000000000
+      internalID: 2916291855980451517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_91
+      rect:
+        serializedVersion: 2
+        x: 2237
+        y: 514
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3dc83f4c5acaf350800000000000000
+      internalID: 6051371547140607294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_92
+      rect:
+        serializedVersion: 2
+        x: 3081
+        y: 460
+        width: 78
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a297d91e783eb50800000000000000
+      internalID: 6621285280244115993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_93
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 431
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e187042f49f429e0800000000000000
+      internalID: -1646917445408554523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_94
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 208
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d706e579d2592a0800000000000000
+      internalID: -6731423939888644733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_95
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 204
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9a60c7c792efc40800000000000000
+      internalID: 5547917405600524752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_96
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 128
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f23c6d769866cc80800000000000000
+      internalID: -8302833867452304656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_97
+      rect:
+        serializedVersion: 2
+        x: 3377
+        y: 121
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52b7efe6b528d1d0800000000000000
+      internalID: -3325866857173896614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_98
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 104
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f97311da9f39b4b0800000000000000
+      internalID: -5424234342025823755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AsteroidsBG_99
+      rect:
+        serializedVersion: 2
+        x: 2424
+        y: 96
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55b88235c36e3bc0800000000000000
+      internalID: -3801491336846592676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AsteroidsBG_0: -5644126305644850731
+      AsteroidsBG_1: -4738240091120956405
+      AsteroidsBG_10: -3900703202856308413
+      AsteroidsBG_11: 6786991635798322641
+      AsteroidsBG_12: -1176422013566824763
+      AsteroidsBG_13: 3442608943604560402
+      AsteroidsBG_14: 5755639867478243372
+      AsteroidsBG_15: -4005458860805227941
+      AsteroidsBG_16: -1416504747927375504
+      AsteroidsBG_17: 5055881124132368093
+      AsteroidsBG_18: 1305521966164854875
+      AsteroidsBG_19: 1862795257659872971
+      AsteroidsBG_2: 3241739026844132245
+      AsteroidsBG_20: 3675162046764674975
+      AsteroidsBG_21: -6523390909828440447
+      AsteroidsBG_22: -2971244811945467607
+      AsteroidsBG_23: -5558132962627143078
+      AsteroidsBG_24: 3423228044146931668
+      AsteroidsBG_25: -2215964281376016114
+      AsteroidsBG_26: 6496652952990742858
+      AsteroidsBG_27: -1526748443696448266
+      AsteroidsBG_28: -5905374735588475110
+      AsteroidsBG_29: 8894728420178713758
+      AsteroidsBG_3: -459699762730840503
+      AsteroidsBG_30: -3209275133022146285
+      AsteroidsBG_31: 6744120298346252056
+      AsteroidsBG_32: 1201627477730523168
+      AsteroidsBG_33: 6558052653520156319
+      AsteroidsBG_34: -1092398072293355612
+      AsteroidsBG_35: 4010180854057512272
+      AsteroidsBG_36: -276219597624685037
+      AsteroidsBG_37: -7944356608260052745
+      AsteroidsBG_38: 6370590425256941457
+      AsteroidsBG_39: -783495963634320463
+      AsteroidsBG_4: 5912550011080410121
+      AsteroidsBG_40: 5444698708330254402
+      AsteroidsBG_41: -4703766626063471484
+      AsteroidsBG_42: -1653022299868846280
+      AsteroidsBG_43: 196443593764291988
+      AsteroidsBG_44: -9047910247125165304
+      AsteroidsBG_45: -903650235431181612
+      AsteroidsBG_46: -231396877567938764
+      AsteroidsBG_47: -1273159529864226723
+      AsteroidsBG_48: 2301705522766318202
+      AsteroidsBG_49: -2732739167011334590
+      AsteroidsBG_5: 830453578573181773
+      AsteroidsBG_50: -6485199499549922814
+      AsteroidsBG_51: -8850287092259401626
+      AsteroidsBG_52: -3725455733455925857
+      AsteroidsBG_53: -1507429558466047192
+      AsteroidsBG_54: -2843529016691255431
+      AsteroidsBG_55: 1577610001062735656
+      AsteroidsBG_56: -7356285501428159790
+      AsteroidsBG_57: 7719852563502594148
+      AsteroidsBG_58: 3895570999177726976
+      AsteroidsBG_59: -3005651686432838688
+      AsteroidsBG_6: 2371552187143322205
+      AsteroidsBG_60: -5200798197642190838
+      AsteroidsBG_61: -4091484969169517051
+      AsteroidsBG_62: -3623463813176864848
+      AsteroidsBG_63: 6911370048963702612
+      AsteroidsBG_64: -9073207176265369681
+      AsteroidsBG_65: -7206113210824129237
+      AsteroidsBG_66: -5148468168544783205
+      AsteroidsBG_67: -4711194266556613695
+      AsteroidsBG_68: 1465529155469332497
+      AsteroidsBG_69: -5907386844566967940
+      AsteroidsBG_7: 6531125862943616986
+      AsteroidsBG_70: 5167405748481840563
+      AsteroidsBG_71: -3459117799656131031
+      AsteroidsBG_72: 8078255442071515229
+      AsteroidsBG_73: -2577034822836766903
+      AsteroidsBG_74: 6624525668952579938
+      AsteroidsBG_75: -9152216838100217935
+      AsteroidsBG_76: -7278995341498748020
+      AsteroidsBG_77: -7065775652572363244
+      AsteroidsBG_78: 2437420595517040537
+      AsteroidsBG_79: -2871169737666843838
+      AsteroidsBG_8: -4726614687020783567
+      AsteroidsBG_80: -7954183287278947518
+      AsteroidsBG_81: -6502154753005221887
+      AsteroidsBG_82: -7649982559396077597
+      AsteroidsBG_83: 2014609888390444701
+      AsteroidsBG_84: 1178726185169302307
+      AsteroidsBG_85: -8098147089765155745
+      AsteroidsBG_86: -4252555751092232141
+      AsteroidsBG_87: 940320723920481940
+      AsteroidsBG_88: 8515471274459655000
+      AsteroidsBG_89: -7824608555460804069
+      AsteroidsBG_9: 7736322114493519111
+      AsteroidsBG_90: 2916291855980451517
+      AsteroidsBG_91: 6051371547140607294
+      AsteroidsBG_92: 6621285280244115993
+      AsteroidsBG_93: -1646917445408554523
+      AsteroidsBG_94: -6731423939888644733
+      AsteroidsBG_95: 5547917405600524752
+      AsteroidsBG_96: -8302833867452304656
+      AsteroidsBG_97: -3325866857173896614
+      AsteroidsBG_98: -5424234342025823755
+      AsteroidsBG_99: -3801491336846592676
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
