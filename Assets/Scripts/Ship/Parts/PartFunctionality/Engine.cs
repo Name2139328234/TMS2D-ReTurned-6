@@ -31,8 +31,8 @@ public class Engine : MonoBehaviour
             return;
         //*/
 
-        _target.AddForceAtPosition(_thrust * _thrustControl * transform.up, transform.position, ForceMode2D.Force);
-        _target.AddTorque(-_torque * _torqueControl, ForceMode2D.Force);
+        _target.AddForceAtPosition(_thrust * _thrustControl * transform.up * Time.deltaTime, transform.position, ForceMode2D.Impulse);
+        _target.AddTorque(-_torque * _torqueControl * Time.deltaTime, ForceMode2D.Impulse);
     }
 
 

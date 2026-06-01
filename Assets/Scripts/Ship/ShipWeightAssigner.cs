@@ -14,7 +14,7 @@ public class ShipWeightAssigner : MonoBehaviour
 
 
 
-    void Start()
+    void Awake()
     {
         _ship.Parts.CollectionChanged += OnShipChanged;
     }

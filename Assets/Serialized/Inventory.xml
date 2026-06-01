@@ -28,4 +28,16 @@
     <Kind>Human</Kind>
     <Count>10</Count>
   </Item>
+  <Item>
+    <Kind>Silver</Kind>
+    <Count>0</Count>
+  </Item>
+  <Item>
+    <Kind>Gold</Kind>
+    <Count>0</Count>
+  </Item>
+  <Item>
+    <Kind>Antimatter</Kind>
+    <Count>0</Count>
+  </Item>
 </Inventory>

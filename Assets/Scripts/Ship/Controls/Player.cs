@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
 {
     public Ship Ship { get => _ship; }
     public Builder Builder { get => _builder; }
+    public Inventory Inventory { get => _inventory; }
 
     [SerializeField] private Ship _ship;
     [SerializeField] private Builder _builder;
@@ -87,18 +88,19 @@ public class Player : MonoBehaviour
     {
         foreach (var engine in _engines)
         {
+            if (Vector2.Distance(_target, _ship.transform.position) < 5f)
+            {
+                engine.ThrustControl = 0f;
+                engine.TorqueControl = 0f;
+                return;
+            }
+
             Vector3 dir = (_target - _ship.transform.position).normalized;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
             float deltaAngle = Mathf.DeltaAngle(angle, _ship.transform.eulerAngles.z);
 
             engine.TorqueControl = Mathf.Sign(deltaAngle) * Mathf.Abs(deltaAngle / 180f);
-            engine.ThrustControl = 1f;
-
-
-            if (Mathf.Abs(deltaAngle) > 5f)
-                engine.ThrustControl = 0f;
-            else
-                engine.TorqueControl = 0f;
+            engine.ThrustControl = 1 - Mathf.Abs(deltaAngle / 180f);
         }
     }
 }
