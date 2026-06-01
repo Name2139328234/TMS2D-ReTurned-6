@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Inventory>
+  <Item>
+    <Kind>Iron</Kind>
+    <Count>10</Count>
+  </Item>
+  <Item>
+    <Kind>Lead</Kind>
+    <Count>10</Count>
+  </Item>
+  <Item>
+    <Kind>Uranium</Kind>
+    <Count>10</Count>
+  </Item>
+  <Item>
+    <Kind>Copper</Kind>
+    <Count>10</Count>
+  </Item>
+  <Item>
+    <Kind>Plastic</Kind>
+    <Count>10</Count>
+  </Item>
+  <Item>
+    <Kind>Carbon</Kind>
+    <Count>10</Count>
+  </Item>
+  <Item>
+    <Kind>Human</Kind>
+    <Count>10</Count>
+  </Item>
+</Inventory>

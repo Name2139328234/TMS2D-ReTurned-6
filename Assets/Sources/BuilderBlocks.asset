@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 590f07e3d9f5af04592313b631f1c71a, type: 3}
+  m_Name: BuilderBlocks
+  m_EditorClassIdentifier: 
+  _availableParts:
+  - Kind: 0
+    PartLevels:
+    - {fileID: 4915511211912211612, guid: a7a4129d10c5dab4680140a3fc8361a6, type: 3}
+    CostBase:
+    - Count: 1
+      Kind: 0
+  - Kind: 1
+    PartLevels:
+    - {fileID: 4971140153511168652, guid: 39f9e2481de3aed4294271083d890270, type: 3}
+    CostBase:
+    - Count: 1
+      Kind: 0
+    - Count: 1
+      Kind: 2
+  - Kind: 2
+    PartLevels:
+    - {fileID: 4915511211912211612, guid: 600207411eb9bd8469317f2bd0743f33, type: 3}
+    CostBase:
+    - Count: 1
+      Kind: 0
+    - Count: 1
+      Kind: 1
+  - Kind: 3
+    PartLevels:
+    - {fileID: 4915511211912211612, guid: 0a930463978231149b3f45e19aff32c5, type: 3}
+    CostBase:
+    - Count: 1
+      Kind: 0
+    - Count: 1
+      Kind: 3
+  - Kind: 4
+    PartLevels:
+    - {fileID: 4915511211912211612, guid: 2b98f3865fc1d2d40b90ebcbbfab0b5a, type: 3}
+    CostBase:
+    - Count: 2
+      Kind: 1
+    - Count: 2
+      Kind: 2
+    - Count: 1
+      Kind: 3
