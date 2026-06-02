@@ -7,15 +7,15 @@ using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
-    public UnityAction OnChange;
+    public UnityAction<ItemStack> OnChange;
 
-    public IReadOnlyList<ItemStack> ItemStacks { get => _itemStacks; }
+    public IReadOnlyDictionary<ItemKind, int> ItemStacks { get => _itemStacks; }
 
-    [SerializeField] private List<ItemStack> _itemStacks;
+    private Dictionary<ItemKind, int> _itemStacks = new();
 
 
 
-    void Start()
+    void Awake()
     {
         Initialize();
     }
@@ -32,49 +32,20 @@ public class Inventory : MonoBehaviour
     }
     public bool IsEnough(ItemStack comparedStack)
     {
-        int combinedCount = 0;
-        foreach (var stack in _itemStacks)
-            if (stack.Kind == comparedStack.Kind)
-                combinedCount += stack.Count;
-
-        return combinedCount >= comparedStack.Count;
+        return _itemStacks[comparedStack.Kind] >= comparedStack.Count;
     }
     public void Add(ItemStack otherStack)
     {
-        for (int i = 0; i < _itemStacks.Count; i++)//not foreach because modifications of stack do not carry over
-        {
-            if (_itemStacks[i].Kind == otherStack.Kind)
-            {
-                _itemStacks[i] = new (_itemStacks[i].Count + otherStack.Count, _itemStacks[i].Kind);//this cannot be modified directly either
-                OnChange?.Invoke();
-                return;
-            }
-        }
-        _itemStacks.Add(otherStack);
-        OnChange?.Invoke();
-
+        _itemStacks[otherStack.Kind] += otherStack.Count;
+        OnChange?.Invoke(new ItemStack(otherStack.Kind, _itemStacks[otherStack.Kind]));
     }
     public void Remove(ItemStack otherStack)
     {
-        for (int i = 0; i < _itemStacks.Count; i++)//same as add
-        {
-            ItemStack stack = _itemStacks[i];
-            if (stack.Kind == otherStack.Kind && stack.Count >= otherStack.Count)
-            {
-                stack.Count -= otherStack.Count;//same as add
-                _itemStacks[i] = stack;
-                OnChange?.Invoke();
-                return;
-            }
-        }
+        if (otherStack.Count > _itemStacks[otherStack.Kind])
+            Debug.LogError("attempted to remove item that isn't there or there is too few of it");
 
-        Debug.LogError("attempted to remove item that isn't there or there is too few of it");
-    }
-    public void Clear()
-    {
-        _itemStacks.Clear();
-        Initialize();
-        OnChange?.Invoke();
+        _itemStacks[otherStack.Kind] -= otherStack.Count;
+        OnChange?.Invoke(new ItemStack(otherStack.Kind, _itemStacks[otherStack.Kind]));
     }
 
 
@@ -83,7 +54,7 @@ public class Inventory : MonoBehaviour
     {
         foreach (ItemKind kind in Enum.GetValues(typeof(ItemKind)))
         {
-            Add(new ItemStack(0, kind));
+            _itemStacks.Add(kind, 0);
         }
     }
 }

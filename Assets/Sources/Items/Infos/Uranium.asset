@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d023cbda3bae4d44a860f4ddce3f9667, type: 3}
+  m_Name: Uranium
+  m_EditorClassIdentifier: 
+  _kind: 2
+  _prefab: {fileID: 320682786531281330, guid: 02557a9913155d84e95b2e7116857503, type: 3}
+  _preview: {fileID: 21300000, guid: 071e940e33ddfc644a3cb3b3c9231c9b, type: 3}
+  _price: 20

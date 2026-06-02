@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Ship _ship;
     [SerializeField] private Builder _builder;
     [SerializeField] private Inventory _inventory;
+    [SerializeField] private float _minTargetDist = 5f;
 
     private List<Engine> _engines = new();
     private Serializer _serializer;
@@ -88,19 +89,19 @@ public class Player : MonoBehaviour
     {
         foreach (var engine in _engines)
         {
-            if (Vector2.Distance(_target, _ship.transform.position) < 5f)
+            if (Vector2.Distance(_target, _ship.transform.position) < _minTargetDist)
             {
                 engine.ThrustControl = 0f;
                 engine.TorqueControl = 0f;
-                return;
+                continue;
             }
 
             Vector3 dir = (_target - _ship.transform.position).normalized;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90f;//-90 is for looking up, not right
             float deltaAngle = Mathf.DeltaAngle(angle, _ship.transform.eulerAngles.z);
 
             engine.TorqueControl = Mathf.Sign(deltaAngle) * Mathf.Abs(deltaAngle / 180f);
-            engine.ThrustControl = 1 - Mathf.Abs(deltaAngle / 180f);
+            engine.ThrustControl = 1f - Mathf.Abs(deltaAngle / 180f);
         }
     }
 }

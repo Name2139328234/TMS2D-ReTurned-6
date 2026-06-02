@@ -130,11 +130,11 @@ public class Serializer : MonoBehaviour
 
             XmlNode kind = inventory.CreateElement("Kind");
             item.AppendChild(kind);
-            kind.InnerText = stack.Kind.ToString();
+            kind.InnerText = stack.Key.ToString();
 
             XmlNode count = inventory.CreateElement("Count");
             item.AppendChild(count);
-            count.InnerText = stack.Count.ToString();
+            count.InnerText = stack.Value.ToString();
         }
 
         inventory.Save(Path.Combine(Application.dataPath, _storagePath, "Inventory") + ".xml");
@@ -162,7 +162,7 @@ public class Serializer : MonoBehaviour
                     count = itemPart.InnerText;
             }
 
-            ItemStack itemStack = new(int.Parse(count), Enum.Parse<ItemKind>(kind));
+            ItemStack itemStack = new(Enum.Parse<ItemKind>(kind), int.Parse(count));
             target.Add(itemStack);
         }
     }

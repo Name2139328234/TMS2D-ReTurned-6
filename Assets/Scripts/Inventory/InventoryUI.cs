@@ -1,7 +1,6 @@
-using System;
 using System.Collections.Generic;
+using Unity.Entities.UniversalDelegates;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 
@@ -13,45 +12,34 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] private Transform _UIParent;
     [SerializeField] private Vector2 _deltaPosition;
     
-    private List<GameObject> _itemUIs = new();
+    private Dictionary<ItemKind, ItemUI> _itemsUI = new();
 
 
 
     void Start()
     {
-        Regenerate();
-        _inventory.OnChange += Regenerate;
+        Generate();
+        _inventory.OnChange += UpdateUI;
     }
 
 
 
-    public void SetTargetedInventory(Inventory inventory)
+    private void UpdateUI(ItemStack stack)
     {
-        if (_inventory != null)
-            _inventory.OnChange -= Regenerate;
-
-        _inventory = inventory;
-        Regenerate();
-        _inventory.OnChange += Regenerate;
+        _itemsUI[stack.Kind].UpdateCount(stack.Count);
     }
-
-
-
-    private void Regenerate()
+    private void Generate()
     {
-        foreach (var oldItemUI in _itemUIs)
-        {
-            Destroy(oldItemUI);
-        }
+        int index = 0;
 
-        _itemUIs = new();
-
-        for (int i = 0; i < _inventory.ItemStacks.Count; i++)
+        foreach (var kind in _inventory.ItemStacks.Keys)
         {
             var spawned = Instantiate(_itemUIPrefab, _UIParent);
-            spawned.transform.localPosition = _deltaPosition * i;
-            spawned.GetComponent<ItemUI>().Initiate(_icons.Get(_inventory.ItemStacks[i].Kind).Preview, _inventory.ItemStacks[i].Count);
-            _itemUIs.Add(spawned);
+            spawned.transform.localPosition = _deltaPosition * index;
+            spawned.GetComponent<ItemUI>().Initiate(_icons.Get(kind).Preview, _inventory.ItemStacks[kind]);
+            _itemsUI.Add(kind, spawned.GetComponent<ItemUI>());
+
+            index++;
         }
     }
 }

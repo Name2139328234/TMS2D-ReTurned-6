@@ -95,7 +95,7 @@ public class PartPriceInfo
 
         foreach (var stack in CostBase)
         {
-            cost.Add(new((int)Mathf.Pow(4, level), stack.Kind));
+            cost.Add(new(stack.Kind, (int)Mathf.Pow(4, level)));
         }
 
         return cost.ToArray();

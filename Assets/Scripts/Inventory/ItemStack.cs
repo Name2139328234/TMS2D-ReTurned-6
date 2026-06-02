@@ -5,14 +5,14 @@ using System;
 [Serializable]
 public struct ItemStack
 {
-    public int Count;
     public ItemKind Kind;
+    public int Count;
 
 
 
-    public ItemStack(int count, ItemKind kind)
+    public ItemStack(ItemKind kind, int count)
     {
-        Count = count;
         Kind = kind;
+        Count = count;
     }
 }
