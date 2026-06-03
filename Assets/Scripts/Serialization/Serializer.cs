@@ -1,4 +1,6 @@
+using GalaxyUtilities;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Xml;
 using UnityEngine;
@@ -166,5 +168,99 @@ public static class Serializer
             ItemStack itemStack = new(Enum.Parse<ItemKind>(kind), int.Parse(count));
             target.Add(itemStack);
         }
+    }
+    public static void SerializeQuadrant(QuadrantInfo info)
+    {
+        XmlDocument quadrant = new();
+
+        XmlNode declaration = quadrant.CreateXmlDeclaration("1.0", "UTF-8", "");
+        quadrant.AppendChild(declaration);
+
+        XmlNode root = quadrant.CreateElement("Quadrant");
+        quadrant.AppendChild(root);
+
+        XmlNode kind = quadrant.CreateElement("Kind");
+        root.AppendChild(kind);
+        kind.InnerText = info.Kind.ToString();
+
+        XmlNode enemies = quadrant.CreateElement("EnemyNumbers");
+        root.AppendChild(enemies);
+        enemies.InnerText = info.EnemyWaveCount.ToString();
+
+        XmlNode traders = quadrant.CreateElement("TraderNumbers");
+        root.AppendChild(traders);
+        traders.InnerText = info.TradeStationCount.ToString();
+
+        XmlNode spawnables = quadrant.CreateElement("SpawnableProbabilities");
+        root.AppendChild(spawnables);
+        foreach (var spawnableInfo in info.SpawnProbability)
+        {
+            XmlNode spawnable = quadrant.CreateElement("Spawnable");
+            spawnables.AppendChild(spawnable);
+
+            XmlNode spawnableKind = quadrant.CreateElement("SpawnableKind");
+            spawnable.AppendChild(spawnableKind);
+            spawnableKind.InnerText = spawnableInfo.Key.ToString();
+
+            XmlNode spawnProbability = quadrant.CreateElement("Probability");
+            spawnable.AppendChild(spawnProbability);
+            spawnProbability.InnerText = spawnableInfo.Value.ToString();
+        }
+
+        quadrant.Save(Path.Combine(Application.dataPath, _storagePath, "SelectedQuadrant") + ".xml");
+    }
+    public static QuadrantInfo DeserializeQuadrant()
+    {
+        string path = Path.Combine(Application.dataPath, _storagePath, "SelectedQuadrant") + ".xml";
+
+        if (!File.Exists(path))
+            throw new Exception("No QuadrantInfo found");
+
+        QuadrantKind kind = default;
+        int enemies = default;
+        int traders = default;
+        Dictionary<SpawnableKind, float> probabilities = new();
+
+        XmlDocument quadrant = new();
+        quadrant.Load(path);
+
+        XmlElement root = quadrant.DocumentElement;
+        foreach (XmlNode node in quadrant.ChildNodes)
+        {
+            if (node.Name == "Kind")
+                kind = Enum.Parse<QuadrantKind>(node.InnerText);
+
+            if (node.Name == "EnemyNumbers")
+                enemies = int.Parse(node.InnerText);
+
+            if (node.Name == "TraderNumbers")
+                traders = int.Parse(node.InnerText);
+
+            if (node.Name == "SpawnableProbabilities")
+            {
+                foreach (XmlNode spawnableInfo in node.ChildNodes)
+                {
+
+                    if (spawnableInfo.Name == "SpawnableProbabilities")
+                    {
+                        SpawnableKind spawnableKind = default;
+                        float probability = default;
+
+                        foreach (XmlNode spawnableNode in spawnableInfo.ChildNodes)
+                        {
+                            if (spawnableNode.Name == "SpawnableKind")
+                                spawnableKind = Enum.Parse<SpawnableKind>(spawnableNode.InnerText);
+
+                            if (spawnableNode.Name == "Probability")
+                                probability = float.Parse(spawnableNode.InnerText);
+                        }
+
+                        probabilities.Add(spawnableKind, probability);
+                    }
+                }
+            }
+        }
+
+        return new QuadrantInfo(kind, enemies, traders, probabilities);
     }
 }

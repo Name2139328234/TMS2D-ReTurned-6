@@ -5,6 +5,7 @@ using ReactiveInputSystem;
 using Reflex.Attributes;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 
@@ -24,8 +25,9 @@ public class Player : MonoBehaviour
     [Inject] private PlayerInputActions _input;
 
     private List<Engine> _engines = new();
-    private DisposableBag _disposables;
     private Vector3 _target;
+    private DisposableBag _disposables;
+    private CancellationTokenSource _cts;
 
 
 
@@ -38,6 +40,8 @@ public class Player : MonoBehaviour
 
         if (_isNonPlayableScene)
             return;
+
+        _cts = new CancellationTokenSource().AddTo(ref _disposables);
 
         _input.Enable();
         _input.AddTo(ref _disposables);
@@ -61,6 +65,7 @@ public class Player : MonoBehaviour
     }
     void OnDestroy()
     {
+        _cts.Cancel();
         _input.Disable();
         _disposables.Dispose();
     }

@@ -111,31 +111,22 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Menu"",
-                    ""type"": ""Button"",
-                    ""id"": ""4fbe6b44-936f-43a5-a65e-62f50726581b"",
-                    ""expectedControlType"": """",
+                    ""name"": ""Scroll"",
+                    ""type"": ""Value"",
+                    ""id"": ""c4b41990-5dfc-4aa4-aa11-95f8ee937667"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Minimap"",
-                    ""type"": ""Button"",
-                    ""id"": ""c1f5de30-96d0-4d6f-888b-b1fbeb1395c0"",
-                    ""expectedControlType"": """",
+                    ""name"": ""Stride"",
+                    ""type"": ""Value"",
+                    ""id"": ""be165bdb-4b08-4733-b960-6728a3c486fb"",
+                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Save"",
-                    ""type"": ""Button"",
-                    ""id"": ""7e4c4892-7bdd-49bc-b66b-446f1ca19c2e"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -207,56 +198,45 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""3f0add0f-8da0-4d28-841d-441a5848382a"",
-                    ""path"": ""<Keyboard>/escape"",
+                    ""id"": ""f1126e6a-8c9f-4a0a-87bf-753a629ccf23"",
+                    ""path"": ""<Mouse>/scroll"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Menu"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b12feedc-7e05-43f3-8a32-d49462912460"",
-                    ""path"": ""<Keyboard>/m"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Minimap"",
+                    ""action"": ""Scroll"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""One Modifier"",
-                    ""id"": ""2151d9ad-edb8-4de9-9bfc-9e8527a014d8"",
+                    ""id"": ""19c96345-eb59-42e5-98ed-a9ab154a54a2"",
                     ""path"": ""OneModifier"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Save"",
+                    ""action"": ""Stride"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""modifier"",
-                    ""id"": ""bf849874-eac2-4404-8545-8c80f138e8b1"",
-                    ""path"": ""<Keyboard>/ctrl"",
+                    ""id"": ""6452a5e9-0891-4978-8248-faaa99dc26e9"",
+                    ""path"": ""<Mouse>/middleButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Save"",
+                    ""action"": ""Stride"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""binding"",
-                    ""id"": ""a3fe307a-babf-405d-b9ba-1327336c6d29"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""id"": ""2034294b-0218-4d8f-aa14-4e5ea4123a99"",
+                    ""path"": ""<Mouse>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Save"",
+                    ""action"": ""Stride"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -269,9 +249,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Select = m_Player.FindAction("Select", throwIfNotFound: true);
         m_Player_Order = m_Player.FindAction("Order", throwIfNotFound: true);
-        m_Player_Menu = m_Player.FindAction("Menu", throwIfNotFound: true);
-        m_Player_Minimap = m_Player.FindAction("Minimap", throwIfNotFound: true);
-        m_Player_Save = m_Player.FindAction("Save", throwIfNotFound: true);
+        m_Player_Scroll = m_Player.FindAction("Scroll", throwIfNotFound: true);
+        m_Player_Stride = m_Player.FindAction("Stride", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -354,9 +333,8 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Select;
     private readonly InputAction m_Player_Order;
-    private readonly InputAction m_Player_Menu;
-    private readonly InputAction m_Player_Minimap;
-    private readonly InputAction m_Player_Save;
+    private readonly InputAction m_Player_Scroll;
+    private readonly InputAction m_Player_Stride;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -377,17 +355,13 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// </summary>
         public InputAction @Order => m_Wrapper.m_Player_Order;
         /// <summary>
-        /// Provides access to the underlying input action "Player/Menu".
+        /// Provides access to the underlying input action "Player/Scroll".
         /// </summary>
-        public InputAction @Menu => m_Wrapper.m_Player_Menu;
+        public InputAction @Scroll => m_Wrapper.m_Player_Scroll;
         /// <summary>
-        /// Provides access to the underlying input action "Player/Minimap".
+        /// Provides access to the underlying input action "Player/Stride".
         /// </summary>
-        public InputAction @Minimap => m_Wrapper.m_Player_Minimap;
-        /// <summary>
-        /// Provides access to the underlying input action "Player/Save".
-        /// </summary>
-        public InputAction @Save => m_Wrapper.m_Player_Save;
+        public InputAction @Stride => m_Wrapper.m_Player_Stride;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -420,15 +394,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Order.started += instance.OnOrder;
             @Order.performed += instance.OnOrder;
             @Order.canceled += instance.OnOrder;
-            @Menu.started += instance.OnMenu;
-            @Menu.performed += instance.OnMenu;
-            @Menu.canceled += instance.OnMenu;
-            @Minimap.started += instance.OnMinimap;
-            @Minimap.performed += instance.OnMinimap;
-            @Minimap.canceled += instance.OnMinimap;
-            @Save.started += instance.OnSave;
-            @Save.performed += instance.OnSave;
-            @Save.canceled += instance.OnSave;
+            @Scroll.started += instance.OnScroll;
+            @Scroll.performed += instance.OnScroll;
+            @Scroll.canceled += instance.OnScroll;
+            @Stride.started += instance.OnStride;
+            @Stride.performed += instance.OnStride;
+            @Stride.canceled += instance.OnStride;
         }
 
         /// <summary>
@@ -446,15 +417,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Order.started -= instance.OnOrder;
             @Order.performed -= instance.OnOrder;
             @Order.canceled -= instance.OnOrder;
-            @Menu.started -= instance.OnMenu;
-            @Menu.performed -= instance.OnMenu;
-            @Menu.canceled -= instance.OnMenu;
-            @Minimap.started -= instance.OnMinimap;
-            @Minimap.performed -= instance.OnMinimap;
-            @Minimap.canceled -= instance.OnMinimap;
-            @Save.started -= instance.OnSave;
-            @Save.performed -= instance.OnSave;
-            @Save.canceled -= instance.OnSave;
+            @Scroll.started -= instance.OnScroll;
+            @Scroll.performed -= instance.OnScroll;
+            @Scroll.canceled -= instance.OnScroll;
+            @Stride.started -= instance.OnStride;
+            @Stride.performed -= instance.OnStride;
+            @Stride.canceled -= instance.OnStride;
         }
 
         /// <summary>
@@ -510,25 +478,18 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnOrder(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Menu" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Scroll" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnMenu(InputAction.CallbackContext context);
+        void OnScroll(InputAction.CallbackContext context);
         /// <summary>
-        /// Method invoked when associated input action "Minimap" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// Method invoked when associated input action "Stride" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>
         /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnMinimap(InputAction.CallbackContext context);
-        /// <summary>
-        /// Method invoked when associated input action "Save" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
-        /// </summary>
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
-        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
-        void OnSave(InputAction.CallbackContext context);
+        void OnStride(InputAction.CallbackContext context);
     }
 }

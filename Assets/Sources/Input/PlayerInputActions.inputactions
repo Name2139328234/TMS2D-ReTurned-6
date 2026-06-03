@@ -25,31 +25,22 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Menu",
-                    "type": "Button",
-                    "id": "4fbe6b44-936f-43a5-a65e-62f50726581b",
-                    "expectedControlType": "",
+                    "name": "Scroll",
+                    "type": "Value",
+                    "id": "c4b41990-5dfc-4aa4-aa11-95f8ee937667",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
-                    "name": "Minimap",
-                    "type": "Button",
-                    "id": "c1f5de30-96d0-4d6f-888b-b1fbeb1395c0",
-                    "expectedControlType": "",
+                    "name": "Stride",
+                    "type": "Value",
+                    "id": "be165bdb-4b08-4733-b960-6728a3c486fb",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Save",
-                    "type": "Button",
-                    "id": "7e4c4892-7bdd-49bc-b66b-446f1ca19c2e",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -121,56 +112,45 @@
                 },
                 {
                     "name": "",
-                    "id": "3f0add0f-8da0-4d28-841d-441a5848382a",
-                    "path": "<Keyboard>/escape",
+                    "id": "f1126e6a-8c9f-4a0a-87bf-753a629ccf23",
+                    "path": "<Mouse>/scroll",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Menu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "b12feedc-7e05-43f3-8a32-d49462912460",
-                    "path": "<Keyboard>/m",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Minimap",
+                    "action": "Scroll",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "One Modifier",
-                    "id": "2151d9ad-edb8-4de9-9bfc-9e8527a014d8",
+                    "id": "19c96345-eb59-42e5-98ed-a9ab154a54a2",
                     "path": "OneModifier",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Save",
+                    "action": "Stride",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "modifier",
-                    "id": "bf849874-eac2-4404-8545-8c80f138e8b1",
-                    "path": "<Keyboard>/ctrl",
+                    "id": "6452a5e9-0891-4978-8248-faaa99dc26e9",
+                    "path": "<Mouse>/middleButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Save",
+                    "action": "Stride",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
                     "name": "binding",
-                    "id": "a3fe307a-babf-405d-b9ba-1327336c6d29",
-                    "path": "<Keyboard>/q",
+                    "id": "2034294b-0218-4d8f-aa14-4e5ea4123a99",
+                    "path": "<Mouse>/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Save",
+                    "action": "Stride",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
