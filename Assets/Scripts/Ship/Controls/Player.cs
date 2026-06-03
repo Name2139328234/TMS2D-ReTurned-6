@@ -19,20 +19,29 @@ public class Player : MonoBehaviour
     [SerializeField] private Builder _builder;
     [SerializeField] private Inventory _inventory;
     [SerializeField] private float _minTargetDist = 5f;
+    [SerializeField] private bool _isNonPlayableScene;//TODO extremely shitty solution, class must be split up later
+
+    [Inject] private PlayerInputActions _input;
 
     private List<Engine> _engines = new();
-    private Serializer _serializer;
-    [Inject] private PlayerInputActions _input;
-    private DisposableBag _disposables = new();
+    private DisposableBag _disposables;
     private Vector3 _target;
 
 
 
     void Start()
     {
-        _input.Enable();
-
         _ship.Parts.CollectionChanged += OnShipChanged;
+
+        Serializer.DeserializeShip(this);
+        Serializer.DeserializeInventory(_inventory);
+
+        if (_isNonPlayableScene)
+            return;
+
+        _input.Enable();
+        _input.AddTo(ref _disposables);
+
 
         var disposableMouseInput = _input.Player.Select
             .StartedAsObservable(gameObject.GetCancellationTokenOnDestroy())
@@ -40,26 +49,20 @@ public class Player : MonoBehaviour
             .Subscribe(point => _target = point)
             .AddTo(ref _disposables);
 
-        var disposableSaveInput = _input.Player.Save
-            .StartedAsObservable(gameObject.GetCancellationTokenOnDestroy())
-            .Subscribe(context =>
-            {
-                _serializer.SerializeShip(_ship);
-                _serializer.SerializeInventory(_inventory);
-            })
-            .AddTo(ref _disposables);
 
-        _disposables.AddTo(this);
 
-        //TODO make proper system for this
-
-        _serializer = FindAnyObjectByType<Serializer>();
-        _serializer.DeserializeShip(this);
-        _serializer.DeserializeInventory(_inventory);
     }
     void Update()
     {
+        if (_isNonPlayableScene)
+            return;
+
         Move();
+    }
+    void OnDestroy()
+    {
+        _input.Disable();
+        _disposables.Dispose();
     }
 
 
@@ -69,15 +72,17 @@ public class Player : MonoBehaviour
         if (!e.IsSingleItem)
             throw new Exception("Can't handle more than one ship part change at a time yet");
 
-        var engine = e.NewItem.Value.GetComponent<Engine>();
+        Engine engine;
 
         switch (e.Action)
         {
             case System.Collections.Specialized.NotifyCollectionChangedAction.Add:
+                engine = e.NewItem.Value.GetComponent<Engine>();
                 if (engine != null)
                     _engines.Add(engine);
                 break;
             case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
+                engine = e.OldItem.Value.GetComponent<Engine>();
                 if (engine != null)
                     _engines.Remove(engine);
                 break;

@@ -5,7 +5,7 @@ public enum PartKind
 {
     Hull,
     Engine,
-    WeaponsPlatform,
+    Weapons,
     Wire,
     Reactor,
     CrewQuarters,

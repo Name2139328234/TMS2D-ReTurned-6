@@ -2,31 +2,31 @@
 <Inventory>
   <Item>
     <Kind>Iron</Kind>
-    <Count>10</Count>
+    <Count>0</Count>
   </Item>
   <Item>
     <Kind>Lead</Kind>
-    <Count>10</Count>
+    <Count>3</Count>
   </Item>
   <Item>
     <Kind>Uranium</Kind>
-    <Count>10</Count>
+    <Count>3</Count>
   </Item>
   <Item>
     <Kind>Copper</Kind>
-    <Count>10</Count>
+    <Count>5</Count>
   </Item>
   <Item>
     <Kind>Plastic</Kind>
-    <Count>10</Count>
+    <Count>0</Count>
   </Item>
   <Item>
     <Kind>Carbon</Kind>
-    <Count>10</Count>
+    <Count>0</Count>
   </Item>
   <Item>
     <Kind>Human</Kind>
-    <Count>10</Count>
+    <Count>0</Count>
   </Item>
   <Item>
     <Kind>Silver</Kind>

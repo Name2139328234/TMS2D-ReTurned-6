@@ -52,14 +52,18 @@ public class EnergyNetwork : MonoBehaviour
         if (!e.IsSingleItem)
             throw new Exception("Can't handle more than one ship part change at a time yet");
 
-        var pos = Vector2Int.FloorToInt(e.NewItem.Value.transform.localPosition);
-        var wire = e.NewItem.Value.GetComponent<Wire>();
-        var generator = e.NewItem.Value.GetComponent<EnergyGenerator>();
-        var user = e.NewItem.Value.GetComponent<EnergyUser>();
+        Vector2Int pos;
+        Wire wire;
+        EnergyGenerator generator;
+        EnergyUser user;
 
         switch (e.Action)
         {
             case System.Collections.Specialized.NotifyCollectionChangedAction.Add:
+                pos = Vector2Int.FloorToInt(e.NewItem.Value.transform.localPosition);
+                wire = e.NewItem.Value.GetComponent<Wire>();
+                generator = e.NewItem.Value.GetComponent<EnergyGenerator>();
+                user = e.NewItem.Value.GetComponent<EnergyUser>();
                 if (wire != null)
                     _wires.Add(pos, wire);
                 if (generator != null)
@@ -68,6 +72,10 @@ public class EnergyNetwork : MonoBehaviour
                     _powerUsers.Add(pos, user);
                 break;
             case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
+                pos = Vector2Int.FloorToInt(e.OldItem.Value.transform.localPosition);
+                wire = e.OldItem.Value.GetComponent<Wire>();
+                generator = e.OldItem.Value.GetComponent<EnergyGenerator>();
+                user = e.OldItem.Value.GetComponent<EnergyUser>();
                 if (wire != null)
                     _wires.Remove(pos);
                 if (generator != null)

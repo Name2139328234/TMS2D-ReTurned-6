@@ -14,10 +14,10 @@ public class ItemUI : MonoBehaviour
     public void Initiate(Sprite item, int count)
     {
         _item.sprite = item;
-        _count.text = count.ToString();
+        _count.text = count < 1000 ? count.ToString() : (count / 1000).ToString() + 'k';
     }
     public void UpdateCount(int count)
     {
-        _count.text = count.ToString();
+        _count.text = count < 1000 ? count.ToString() : (count / 1000).ToString() + 'k';
     }
 }

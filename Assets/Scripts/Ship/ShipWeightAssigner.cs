@@ -24,15 +24,17 @@ public class ShipWeightAssigner : MonoBehaviour
         if (!e.IsSingleItem)
             throw new Exception("Can't handle more than one ship part change at a time yet");
 
-        var weight = e.NewItem.Value.GetComponent<PartWeight>();
+        PartWeight weight;
 
         switch (e.Action)
         {
             case System.Collections.Specialized.NotifyCollectionChangedAction.Add:
+                weight = e.NewItem.Value.GetComponent<PartWeight>();
                 if (weight != null)
                     ReWeight(weight.Value);
                 break;
             case System.Collections.Specialized.NotifyCollectionChangedAction.Remove:
+                weight = e.OldItem.Value.GetComponent<PartWeight>();
                 if (weight != null)
                     ReWeight(-weight.Value);
                 break;

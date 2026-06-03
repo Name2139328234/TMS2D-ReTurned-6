@@ -1,24 +1,35 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 
 public class Builder : MonoBehaviour
 {
-    [HideInInspector] public Vector2Int SelectedPosition;
-    [HideInInspector] public PartInfo SelectedInfo;
+    public UnityAction<BuildingArgs> OnBuild;
+    public UnityAction<BuildingArgs> OnUnbuild;
+
+    [HideInInspector][NonSerialized] public Vector2Int SelectedPosition;
+    [HideInInspector][NonSerialized] public PartInfo SelectedInfo;
 
     public PartPriceInfo[] AvailableParts { get => _builderBlocks.AvailableParts; }
+    public Ship Ship { get => _ship; }
+    public Inventory Inventory { get => _inventory; }
 
     [SerializeField] private BuilderBlocks _builderBlocks;
     [SerializeField] private Inventory _inventory;
     [SerializeField] private Ship _ship;
 
+    private bool _isAllowedBuilding = true;
+
 
 
     public void Build(bool isSpending)
     {
+        if (!_isAllowedBuilding)
+            return;
+
         var info = GetPriceInfo(SelectedInfo.Kind);
         var cost = info.GetLevelledCost(SelectedInfo.Level);
 
@@ -39,42 +50,57 @@ public class Builder : MonoBehaviour
         spawned.transform.SetLocalPositionAndRotation((Vector3Int)SelectedPosition, Quaternion.identity);
         spawned.layer = _ship.gameObject.layer;
         _ship.AddPart(SelectedPosition, spawned);
+
+        OnBuild?.Invoke(new(isSpending));
     }
-    public void UnBuild()
+    public void Unbuild(bool isGaining)
     {
+        if (!_isAllowedBuilding)
+            return;
+
         var partGO = _ship.RemovePart(SelectedPosition);
 
         if (partGO == null)
             return;
 
-        foreach (var partInfo in _builderBlocks.AvailableParts)
+        if (isGaining)
         {
-            for (int i = 0; i < partInfo.PartLevels.Length; i++)
+            foreach (var partInfo in _builderBlocks.AvailableParts)
             {
-                if (partGO.name == partInfo.PartLevels[i].name)
+                for (int i = 0; i < partInfo.PartLevels.Length; i++)
                 {
-                    var cost = partInfo.GetLevelledCost(i);
-
-                    foreach (var stack in cost)
+                    if (partGO.name == partInfo.PartLevels[i].name)
                     {
-                        _inventory.Add(stack);
+                        var cost = partInfo.GetLevelledCost(i);
+
+                        foreach (var stack in cost)
+                        {
+                            _inventory.Add(stack);
+                        }
                     }
                 }
             }
         }
 
         Destroy(partGO);
+
+        OnUnbuild?.Invoke(new(isGaining));
     }
-
-
-
-    private PartPriceInfo GetPriceInfo(PartKind kind)
+    public PartPriceInfo GetPriceInfo(PartKind kind)
     {
         foreach (var partInfo in _builderBlocks.AvailableParts)
             if (partInfo.Kind == kind)
                 return partInfo;
 
         throw new Exception($"No part of PartKind {kind} found");
+    }
+    public bool IsEnough()
+    {
+        return _inventory.IsEnough(GetPriceInfo(SelectedInfo.Kind).GetLevelledCost(SelectedInfo.Level));
+    }
+    public void SetAllowedBuilding(bool isAllowed)
+    {
+        _isAllowedBuilding = isAllowed;
     }
 }
 
@@ -95,9 +121,20 @@ public class PartPriceInfo
 
         foreach (var stack in CostBase)
         {
-            cost.Add(new(stack.Kind, (int)Mathf.Pow(4, level)));
+            cost.Add(new(stack.Kind, (int)Mathf.Pow(4, level) * stack.Count));
         }
 
         return cost.ToArray();
+    }
+}
+public struct BuildingArgs
+{
+    public bool IsPriced;
+
+
+
+    public BuildingArgs(bool isPriced)
+    {
+        IsPriced = isPriced;
     }
 }

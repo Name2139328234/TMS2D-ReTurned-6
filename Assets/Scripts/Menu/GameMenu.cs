@@ -7,9 +7,9 @@ using UnityEngine.UI;
 public class GameMenu : MonoBehaviour
 {
     [SerializeField] private Player _player;
-    [SerializeField] private Serializer _serializer;
-    [SerializeField] private Button _pause;
     [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private GameObject _gameMenu;
+    [SerializeField] private Button _pause;
     [SerializeField] private Button _resume;
     [SerializeField] private Button _home;
     [SerializeField] private string _mainMenuName;
@@ -27,20 +27,20 @@ public class GameMenu : MonoBehaviour
 
     private void Home()
     {
-        _serializer.SerializeShip(_player.Ship);
-        _serializer.SerializeInventory(_player.Inventory);
+        Serializer.SerializeShip(_player.Ship);
+        Serializer.SerializeInventory(_player.Inventory);
         SceneManager.LoadScene(_mainMenuName);
     }
     private void Pause()
     {
         Time.timeScale = 0f;
-        _pause.gameObject.SetActive(false);
+        _gameMenu.SetActive(false);
         _pauseMenu.SetActive(true);
     }
     private void Resume()
     {
         Time.timeScale = 1f;
         _pauseMenu.SetActive(false);
-        _pause.gameObject.SetActive(true);
+        _gameMenu.SetActive(true);
     }
 }

@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 590f07e3d9f5af04592313b631f1c71a, type: 3}
+  m_Name: BuilderBlocks
+  m_EditorClassIdentifier: 
+  _availableParts:
+  - Kind: 0
+    PartLevels:
+    - {fileID: 4915511211912211612, guid: a7a4129d10c5dab4680140a3fc8361a6, type: 3}
+    - {fileID: 4915511211912211612, guid: 8e93a6e6a8518814998ac978ff84c658, type: 3}
+    - {fileID: 4915511211912211612, guid: 2ec3d70a83287d54db0cd571280f4c4f, type: 3}
+    - {fileID: 4915511211912211612, guid: 7303a024042010a45ac971724414ea0a, type: 3}
+    - {fileID: 4915511211912211612, guid: 1ee961145a3431847ab51c46236582be, type: 3}
+    - {fileID: 4915511211912211612, guid: 12ac6409dba9e334eb0b28a7dffe0b2c, type: 3}
+    - {fileID: 4915511211912211612, guid: cdf37803ff1c0474bb032de58523a197, type: 3}
+    CostBase:
+    - Kind: 0
+      Count: 1
+  - Kind: 1
+    PartLevels:
+    - {fileID: 4971140153511168652, guid: 39f9e2481de3aed4294271083d890270, type: 3}
+    - {fileID: 4971140153511168652, guid: 16922e07a0fed7a45a01daa8edf97a2a, type: 3}
+    - {fileID: 4971140153511168652, guid: 84c3d1bffbeac9b458b6e2456943d277, type: 3}
+    - {fileID: 4971140153511168652, guid: 0df15a8ad2ad85648b6543d4b85e5cdb, type: 3}
+    - {fileID: 4971140153511168652, guid: 6f793b9f2ad4b8646a1ae3e567551b91, type: 3}
+    - {fileID: 4971140153511168652, guid: a7b9a904da963e04188bbb3ba94d2498, type: 3}
+    - {fileID: 4971140153511168652, guid: f20048d30d521e84aaa2aa03c52f2260, type: 3}
+    CostBase:
+    - Kind: 0
+      Count: 1
+    - Kind: 2
+      Count: 1
+  - Kind: 2
+    PartLevels:
+    - {fileID: 4915511211912211612, guid: 600207411eb9bd8469317f2bd0743f33, type: 3}
+    - {fileID: 4915511211912211612, guid: ef57bd0dd10af824f9beee5faf7f82c2, type: 3}
+    - {fileID: 4915511211912211612, guid: 8e53dafbfcaba5f49ad183460043cc9c, type: 3}
+    - {fileID: 4915511211912211612, guid: 6e3a20d341c71f648aaed9175f5c2109, type: 3}
+    - {fileID: 4915511211912211612, guid: 116d3169ffe2b504fb4135e637a3b986, type: 3}
+    - {fileID: 4915511211912211612, guid: 4f573dd897679a54b87a61a5e043d4e2, type: 3}
+    - {fileID: 4915511211912211612, guid: 52917e7400b3dee49abfdfb102fc0efb, type: 3}
+    CostBase:
+    - Kind: 0
+      Count: 1
+    - Kind: 1
+      Count: 1
+  - Kind: 3
+    PartLevels:
+    - {fileID: 4915511211912211612, guid: 0a930463978231149b3f45e19aff32c5, type: 3}
+    - {fileID: 4915511211912211612, guid: 3536b7c52de4bc74fa6af2dab90d452d, type: 3}
+    - {fileID: 4915511211912211612, guid: 7ffc9c0642dd9fa4982ae3fb1c8b3e63, type: 3}
+    - {fileID: 4915511211912211612, guid: edc88baaede630d42b0afbf902634ed4, type: 3}
+    - {fileID: 4915511211912211612, guid: 1ac6629ca4f93754dbeff2dbc0f7237c, type: 3}
+    - {fileID: 4915511211912211612, guid: 93e8206eb43b426428886c586e979e7a, type: 3}
+    - {fileID: 4915511211912211612, guid: 24b2089b34b75264eb2cc2f2a34f8638, type: 3}
+    CostBase:
+    - Kind: 0
+      Count: 1
+    - Kind: 3
+      Count: 1
+  - Kind: 4
+    PartLevels:
+    - {fileID: 4915511211912211612, guid: 2b98f3865fc1d2d40b90ebcbbfab0b5a, type: 3}
+    - {fileID: 4915511211912211612, guid: 23eec8fcc055ab948b9032db95818e5b, type: 3}
+    - {fileID: 4915511211912211612, guid: 4ebaebc734d051e47964618e5d9d9bde, type: 3}
+    - {fileID: 4915511211912211612, guid: ecb66b1db2e9d444c86dced4b1d48b67, type: 3}
+    - {fileID: 4915511211912211612, guid: 93083f99cdf01ac4a9b8dd1c8a6c99b7, type: 3}
+    - {fileID: 4915511211912211612, guid: 9376143fd26523e4698f27eab0fc2527, type: 3}
+    - {fileID: 4915511211912211612, guid: fd6c3052eaaa2944a96923fe72438f88, type: 3}
+    CostBase:
+    - Kind: 1
+      Count: 2
+    - Kind: 2
+      Count: 2
+    - Kind: 3
+      Count: 1

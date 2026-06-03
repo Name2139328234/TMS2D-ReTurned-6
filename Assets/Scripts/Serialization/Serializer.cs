@@ -5,14 +5,13 @@ using UnityEngine;
 
 
 
-public class Serializer : MonoBehaviour
+public static class Serializer
 {
-    [SerializeField]
-    private string _storagePath;
+    private const string _storagePath = "Serialized";
 
 
 
-    public void SerializeShip(Ship ship)
+    public static void SerializeShip(Ship ship)
     {
         XmlDocument serializedShip = new();
 
@@ -55,7 +54,7 @@ public class Serializer : MonoBehaviour
 
         serializedShip.Save(Path.Combine(Application.dataPath, _storagePath, ship.gameObject.name + ".xml").ToString());
     }
-    public void DeserializeShip(Player owner)
+    public static void DeserializeShip(Player owner)
     {
         string path = Path.Combine(Application.dataPath, _storagePath, owner.Ship.gameObject.name) + ".xml";
 
@@ -112,8 +111,10 @@ public class Serializer : MonoBehaviour
                 }
             }
         }
+
+        owner.Builder.SelectedInfo = new(PartKind.Hull, 0);
     }
-    public void SerializeInventory(Inventory target)
+    public static void SerializeInventory(Inventory target)
     {
         XmlDocument inventory = new();
 
@@ -139,7 +140,7 @@ public class Serializer : MonoBehaviour
 
         inventory.Save(Path.Combine(Application.dataPath, _storagePath, "Inventory") + ".xml");
     }
-    public void DeserializeInventory(Inventory target)
+    public static void DeserializeInventory(Inventory target)
     {
         if (!File.Exists(Path.Combine(Application.dataPath, _storagePath, "Inventory") + ".xml"))
             return;
