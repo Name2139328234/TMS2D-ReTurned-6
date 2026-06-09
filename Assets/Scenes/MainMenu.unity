@@ -1388,7 +1388,7 @@ MonoBehaviour:
   _play: {fileID: 1790868360}
   _build: {fileID: 563717142}
   _quit: {fileID: 1960158382}
-  _spaceSceneName: Space
+  _spaceSceneName: WorldMap
   _buildSceneName: Shipyard
 --- !u!1 &1790868358
 GameObject:

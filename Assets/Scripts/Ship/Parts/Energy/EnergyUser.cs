@@ -12,7 +12,7 @@ public class EnergyUser : MonoBehaviour
     [SerializeField] private float _maxBuffer;
 
     private ReactiveProperty<bool> _isOn = new();
-    private float _buffer;//I thought of making this into ReactiveProperty<float>, but all implementations were overenginered and less effective
+    private float _buffer;//Thought of making this into ReactiveProperty<float>, but all implementations were overenginered and less effective
 
 
 

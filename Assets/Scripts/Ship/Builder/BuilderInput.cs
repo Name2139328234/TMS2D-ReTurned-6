@@ -5,6 +5,7 @@ using Reflex.Attributes;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 
 
@@ -28,37 +29,48 @@ public class BuilderInput : MonoBehaviour
         _input.Player.Order.Enable();
         _input.AddTo(ref _disposables);
 
-        var disposableMouseInput = _input.Player.Select
+        var disposableInputLMB = _input.Player.Select
             .StartedAsObservable(_cts.Token)
-            .Select(context => Vector2Int.FloorToInt(Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>()) + Vector3.one * 0.5f))
-            .Where(point => !_builder.Ship.Parts.ContainsKey(point) && _builder.IsEnough() && !_isPointerOverObjectLastFrame)
-            .Subscribe(point =>
-            {
-                _builder.SelectedPosition = point;
-                _builder.Build(true);
-            })
+            .Subscribe(AttemptBuild)
             .AddTo(ref _disposables);
 
         var disposableInputRMB = _input.Player.Order
             .StartedAsObservable(_cts.Token)
-            .Select(context => Vector2Int.FloorToInt(Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>()) + Vector3.one * 0.5f))
-            .Where(point => _builder.Ship.Parts.ContainsKey(point))
-            .Subscribe(point =>
-            {
-                _builder.SelectedPosition = point;
-                _builder.Unbuild(true);
-            })
+            .Subscribe(AttemptUnbuild)
             .AddTo(ref _disposables);
     }
     void Update()
     {
         _isPointerOverObjectLastFrame = EventSystem.current.IsPointerOverGameObject();
     }
-    private void OnDestroy()
+    void OnDestroy()
     {
-        _cts.Cancel();//disposing the cts DOESN'T cancel the tokens by itself
+        _cts?.Cancel();//disposing the cts DOESN'T cancel the tokens by itself
         _input.Player.Select.Disable();
         _input.Player.Order.Disable();
         _disposables.Dispose();
+    }
+
+
+
+    private void AttemptBuild(InputAction.CallbackContext context)
+    {
+        var point = Vector2Int.FloorToInt(Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>()) + Vector3.one * 0.5f);
+
+        if (_builder.Ship.Parts.ContainsKey(point) || !_builder.IsEnough() || _isPointerOverObjectLastFrame)
+            return;
+
+        _builder.SelectedPosition = point;
+        _builder.Build(true);
+    }
+    private void AttemptUnbuild(InputAction.CallbackContext context)         
+    {
+        var point = Vector2Int.FloorToInt(Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>()) + Vector3.one * 0.5f);
+
+        if (!_builder.Ship.Parts.ContainsKey(point))
+            return;
+
+        _builder.SelectedPosition = point;
+        _builder.Unbuild(true);
     }
 }

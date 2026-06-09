@@ -1,12 +1,12 @@
 using ObservableCollections;
+using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 
 
 public class Ship : MonoBehaviour
 {
-    public UnityAction<Ship> OnDead;
+    public Action<Ship> OnDead;
 
     public ObservableDictionary<Vector2Int, GameObject> Parts { get => _parts; }
 

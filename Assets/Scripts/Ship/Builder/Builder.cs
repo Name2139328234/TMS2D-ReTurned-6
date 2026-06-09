@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 
 
 public class Builder : MonoBehaviour
 {
-    public UnityAction<BuildingArgs> OnBuild;
-    public UnityAction<BuildingArgs> OnUnbuild;
+    public Action<BuildingArgs> OnBuild;
+    public Action<BuildingArgs> OnUnbuild;
 
     [HideInInspector][NonSerialized] public Vector2Int SelectedPosition;
     [HideInInspector][NonSerialized] public PartInfo SelectedInfo;

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Quadrant>
+  <Kind>Planet</Kind>
+  <EnemyNumbers>5</EnemyNumbers>
+  <TraderNumbers>5</TraderNumbers>
+  <SpawnableProbabilities>
+    <Spawnable>
+      <SpawnableKind>SiteMine</SpawnableKind>
+      <Probability>0,7</Probability>
+    </Spawnable>
+    <Spawnable>
+      <SpawnableKind>SiteFarm</SpawnableKind>
+      <Probability>0,2</Probability>
+    </Spawnable>
+    <Spawnable>
+      <SpawnableKind>SiteFactory</SpawnableKind>
+      <Probability>0,3</Probability>
+    </Spawnable>
+  </SpawnableProbabilities>
+</Quadrant>

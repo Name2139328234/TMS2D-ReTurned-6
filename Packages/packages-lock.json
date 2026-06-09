@@ -27,6 +27,13 @@
       "dependencies": {},
       "hash": "ba8178709faa326c3c1c7bc4b879aad9b3dc739a"
     },
+    "com.hissal.closures": {
+      "version": "https://github.com/Hissal/Closures.git?path=Closures.Unity/Assets/Closures",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "09e5d64fc4df1f7770d6b997c2520acdb8e97665"
+    },
     "com.nuskey8.reactive-input-system": {
       "version": "https://github.com/nuskey8/ReactiveInputSystem.git?path=Assets/ReactiveInputSystem",
       "depth": 0,

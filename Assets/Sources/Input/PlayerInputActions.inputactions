@@ -41,6 +41,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "SpecialSelect",
+                    "type": "Button",
+                    "id": "f432e4ae-4a99-411c-9b19-a82532aad108",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -153,6 +162,17 @@
                     "action": "Stride",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "705d8327-3d35-4327-977e-3782b1d82063",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "MultiTap(tapDelay=0.1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SpecialSelect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

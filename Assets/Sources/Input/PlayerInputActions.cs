@@ -127,6 +127,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""SpecialSelect"",
+                    ""type"": ""Button"",
+                    ""id"": ""f432e4ae-4a99-411c-9b19-a82532aad108"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -239,6 +248,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Stride"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""705d8327-3d35-4327-977e-3782b1d82063"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": ""MultiTap(tapDelay=0.1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SpecialSelect"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -251,6 +271,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_Player_Order = m_Player.FindAction("Order", throwIfNotFound: true);
         m_Player_Scroll = m_Player.FindAction("Scroll", throwIfNotFound: true);
         m_Player_Stride = m_Player.FindAction("Stride", throwIfNotFound: true);
+        m_Player_SpecialSelect = m_Player.FindAction("SpecialSelect", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -335,6 +356,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Order;
     private readonly InputAction m_Player_Scroll;
     private readonly InputAction m_Player_Stride;
+    private readonly InputAction m_Player_SpecialSelect;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -362,6 +384,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Stride".
         /// </summary>
         public InputAction @Stride => m_Wrapper.m_Player_Stride;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/SpecialSelect".
+        /// </summary>
+        public InputAction @SpecialSelect => m_Wrapper.m_Player_SpecialSelect;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -400,6 +426,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Stride.started += instance.OnStride;
             @Stride.performed += instance.OnStride;
             @Stride.canceled += instance.OnStride;
+            @SpecialSelect.started += instance.OnSpecialSelect;
+            @SpecialSelect.performed += instance.OnSpecialSelect;
+            @SpecialSelect.canceled += instance.OnSpecialSelect;
         }
 
         /// <summary>
@@ -423,6 +452,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Stride.started -= instance.OnStride;
             @Stride.performed -= instance.OnStride;
             @Stride.canceled -= instance.OnStride;
+            @SpecialSelect.started -= instance.OnSpecialSelect;
+            @SpecialSelect.performed -= instance.OnSpecialSelect;
+            @SpecialSelect.canceled -= instance.OnSpecialSelect;
         }
 
         /// <summary>
@@ -491,5 +523,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnStride(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "SpecialSelect" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSpecialSelect(InputAction.CallbackContext context);
     }
 }

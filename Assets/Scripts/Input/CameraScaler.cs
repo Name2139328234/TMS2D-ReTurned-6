@@ -1,8 +1,10 @@
+using Closures;
 using R3;
 using ReactiveInputSystem;
 using Reflex.Attributes;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 
@@ -13,8 +15,8 @@ public class CameraScaler : MonoBehaviour
 
     [SerializeField] private Camera _camera;
     [SerializeField] private float _sensitivity;
-    [SerializeField] private float _max;
     [SerializeField] private float _min;
+    [SerializeField] private float _max;
 
     [Inject] private PlayerInputActions _input;
 
@@ -32,12 +34,7 @@ public class CameraScaler : MonoBehaviour
 
         _input.Player.Scroll
             .PerformedAsObservable(_cts.Token)
-            .Select(context => context.ReadValue<Vector2>().y * _sensitivity * Time.deltaTime)
-            .Subscribe(scroll =>
-            {
-                _camera.orthographicSize -= scroll;
-                _camera.orthographicSize = Mathf.Clamp(_camera.orthographicSize, _min, _max);
-            })
+            .Subscribe(DoScroll)
             .AddTo(ref _disposables);
     }
     void OnDestroy()
@@ -45,5 +42,34 @@ public class CameraScaler : MonoBehaviour
         _cts.Cancel();
         _input.Player.Scroll.Disable();
         _disposables.Dispose();
+    }
+
+
+
+    private void DoScroll(InputAction.CallbackContext context)
+    {
+        float scroll = context.ReadValue<Vector2>().y * _sensitivity * Time.deltaTime;
+        _camera.orthographicSize -= scroll;
+        _camera.orthographicSize = Mathf.Clamp(_camera.orthographicSize, _min, _max);
+    }
+
+
+
+    private struct CameraScrollData
+    {
+        public Camera Cam;
+        public float Scroll;
+        public float Min;
+        public float Max;
+
+
+
+        public CameraScrollData(Camera cam, float scroll, float min, float max)
+        {
+            Cam = cam;
+            Scroll = scroll;
+            Min = min;
+            Max = max;
+        }
     }
 }

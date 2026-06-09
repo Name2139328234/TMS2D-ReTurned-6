@@ -9,12 +9,13 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
 
 
-public class GalaxyPointSelector : MonoBehaviour
+public class GalaxyPointSelector : MonoBehaviour//TODO split this class
 {
     [SerializeField] private CameraScaler _scaler;
     [SerializeField] private float _completionTime;
@@ -51,35 +52,21 @@ public class GalaxyPointSelector : MonoBehaviour
 
         _cts = new CancellationTokenSource().AddTo(ref _disposables);
 
-        _input.Player.Select.Enable();
+        _input.Player.SpecialSelect.Enable();
         _input.AddTo(ref _disposables);
 
         //this exists since it's impossible to pass a Vector2 via Input on double click
-        _input.Player.Select
+        _input.Player.SpecialSelect
             .PerformedAsObservable(_cts.Token)
-            .TimeInterval()
-            .Chunk(2, 1)
-            .Where(presses => presses[0].Interval.TotalSeconds <= _pressIntervalSeconds)
-            .ThrottleFirst(TimeSpan.FromSeconds(_pressIntervalSeconds))
-            .Select(pressesInfo => GetTileMiddle(_scaler.Camera.ScreenToWorldPoint(pressesInfo[0].Value.ReadValue<Vector2>())))
+            .Select(context => GetTileMiddle())
             .Subscribe(desiredPos => Animate(desiredPos).Forget())
             .AddTo(ref _disposables);
     }
     void OnDestroy()
     {
         _cts.Cancel();
-        _input.Player.Select.Disable();
+        _input.Player.SpecialSelect.Disable();
         _disposables.Dispose();
-    }
-    private void OnDrawGizmos()
-    {
-        if (_quadrants == null) return;
-
-        foreach (var quadrant in _quadrants)
-        {
-            Gizmos.color = Color.Lerp(Color.white, Color.green, quadrant.Value.TradeStationCount / 10f);
-            Gizmos.DrawCube(GetTileMiddle((Vector3Int)quadrant.Key), Vector3.one * _cellSize);
-        }
     }
 
 
@@ -132,9 +119,15 @@ public class GalaxyPointSelector : MonoBehaviour
         AnimatePos(desiredPos);
         AnimateSize();
 
-        await UniTask.Delay(TimeSpan.FromSeconds(_pressIntervalSeconds), cancellationToken: _cts.Token);
+        await UniTask.Delay(TimeSpan.FromSeconds(_completionTime), cancellationToken: _cts.Token);
 
-        SceneManager.LoadScene(_quadrants[Vector2Int.FloorToInt(desiredPos /= _cellSize)].Kind == QuadrantKind.Space ? _spaceSceneName : _planetSceneName);
+        Vector2Int quadrantPos = Vector2Int.FloorToInt(desiredPos /= _cellSize);
+
+        if (!_quadrants.ContainsKey(quadrantPos))
+            return;
+
+        Serializer.SerializeQuadrant(_quadrants[quadrantPos]);
+        SceneManager.LoadScene(_quadrants[quadrantPos].Kind == QuadrantKind.Space ? _spaceSceneName : _planetSceneName);
     }
     private void AnimatePos(Vector3 desiredPos)
     {
@@ -152,8 +145,10 @@ public class GalaxyPointSelector : MonoBehaviour
             .BindToOrthographicSize(_scaler.Camera)
             .AddTo(ref _disposables);
     }
-    private Vector3 GetTileMiddle(Vector3 worldPos)
+    private Vector3 GetTileMiddle()
     {
+        Vector3 worldPos = _scaler.Camera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+
         var result = worldPos;
 
         result /= _cellSize;
@@ -188,9 +183,9 @@ namespace GalaxyUtilities
             TradeStationCount = tradersCount;
             _spawnProbability = new();
 
-            System.Random random = new();
+            System.Random random = new();//TODO pass a seed
 
-            foreach (SpawnableKind spawnable in Enum.GetValues(typeof(SpawnableKind)))
+            foreach (SpawnableKind spawnable in QuadrantKindSpawnables.Get(kind))
             {
                 _spawnProbability.Add(spawnable, random.Next(0, 10) / 10f);
             }
@@ -233,6 +228,43 @@ namespace GalaxyUtilities
         AsteroidUranium,
         AsteroidCopper,
         AsteroidSilver,
-        AsteroidGold
+        AsteroidGold,
+        SiteMine,
+        SiteFarm,
+        SiteFactory
+    }
+    public static class QuadrantKindSpawnables
+    {
+        private static Dictionary<QuadrantKind, SpawnableKind[]> _pairs = new()
+        {
+            {
+                QuadrantKind.Space,
+                new SpawnableKind[]
+                {
+                    SpawnableKind.AsteroidIron,
+                    SpawnableKind.AsteroidLead,
+                    SpawnableKind.AsteroidUranium,
+                    SpawnableKind.AsteroidCopper,
+                    SpawnableKind.AsteroidSilver,
+                    SpawnableKind.AsteroidGold
+                }
+            },
+            {
+                QuadrantKind.Planet,
+                new SpawnableKind[]
+                {
+                    SpawnableKind.SiteMine,
+                    SpawnableKind.SiteFarm,
+                    SpawnableKind.SiteFactory
+                }
+            }
+        };
+
+
+
+        public static IEnumerable<SpawnableKind> Get(QuadrantKind quadrantKind)
+        {
+            return _pairs[quadrantKind];
+        }
     }
 }

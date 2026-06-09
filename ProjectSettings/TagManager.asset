@@ -14,10 +14,10 @@ TagManager:
   - Player
   - Enemy
   - Trader
-  - 
-  - 
-  - 
-  - 
+  - PlayerBullet
+  - EnemyBullet
+  - TraderBullet
+  - SitePlanet
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: BackgroundTilemaps
     uniqueID: 3742852339
+    locked: 0
+  - name: Spawnables
+    uniqueID: 3480069563
     locked: 0
   - name: Default
     uniqueID: 0

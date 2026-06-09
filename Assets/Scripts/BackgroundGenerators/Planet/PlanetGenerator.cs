@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+//using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -6,6 +6,11 @@ using UnityEngine.Tilemaps;
 
 public class PlanetGenerator : MonoBehaviour
 {
+    public Vector2Int ChunkSize { get => _chunkSize; }
+    public int GenerationRange { get => _generationRange; }
+    public Tilemap Ground { get => _ground; }
+    public PlanetTilesHolder Tiles { get => _tiles; }
+
     [SerializeField] private Transform _player;
     [SerializeField] private Vector2Int _chunkSize;
     [SerializeField] private int _generationRange;
@@ -22,13 +27,13 @@ public class PlanetGenerator : MonoBehaviour
     [SerializeField] private int _heightNoiseOctaves;
     [SerializeField] private int _temparatureNoiseOctaves;
 
-    private List<Vector2Int> _generatedChunks = new();
+    //private HashSet<Vector2Int> _generatedChunks = new();
     private FastNoise _heightNoise;
     private FastNoise _temperatureNoise;
 
+    
 
-
-    void Start()
+    void Awake()
     {
         _heightNoise = new(_temperatureSeed);
         _temperatureNoise = new(_heightSeed);
@@ -41,7 +46,21 @@ public class PlanetGenerator : MonoBehaviour
 
         _heightNoise.SetFractalOctaves(_heightNoiseOctaves);
         _temperatureNoise.SetFractalOctaves(_temparatureNoiseOctaves);
+
+
+        var playerChunk = GetPlayerChunk();
+
+        for (int x = -_generationRange; x <= _generationRange; x++)
+        {
+            for (int y = -_generationRange; y <= _generationRange; y++)
+            {
+                Vector2Int offset = new(x, y);
+
+                GenerateChunk(playerChunk + offset);
+            }
+        }
     }
+    /*
     void Update()
     {
         var playerChunk = GetPlayerChunk();
@@ -59,6 +78,7 @@ public class PlanetGenerator : MonoBehaviour
             }
         }
     }
+    */
 
 
 
@@ -93,7 +113,7 @@ public class PlanetGenerator : MonoBehaviour
             }
         }
 
-        _generatedChunks.Add(index);
+        //_generatedChunks.Add(index);
     }
     private Tile GetBestTile(Vector2Int globalPos)
     {

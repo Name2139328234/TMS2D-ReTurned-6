@@ -1,13 +1,12 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 
 
 public class Inventory : MonoBehaviour
 {
-    public UnityAction<ItemStack> OnChange;
+    public Action<ItemStack> OnChange;
 
     public IReadOnlyDictionary<ItemKind, int> ItemStacks { get => _itemStacks; }
 

@@ -2,7 +2,7 @@
 <Spaceship>
   <Blocks>
     <Block>
-      <Kind>Reactor</Kind>
+      <Kind>Wire</Kind>
       <Level>0</Level>
       <Position>
         <X>0</X>
@@ -10,7 +10,7 @@
       </Position>
     </Block>
     <Block>
-      <Kind>Wire</Kind>
+      <Kind>Reactor</Kind>
       <Level>0</Level>
       <Position>
         <X>-1</X>
@@ -18,7 +18,7 @@
       </Position>
     </Block>
     <Block>
-      <Kind>Wire</Kind>
+      <Kind>Reactor</Kind>
       <Level>0</Level>
       <Position>
         <X>1</X>

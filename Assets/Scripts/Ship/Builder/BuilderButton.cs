@@ -1,32 +1,33 @@
+using System;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
 
 public class BuilderButton : MonoBehaviour
 {
-    public UnityAction<BuilderButton> OnPress;
-
-    public PartKind Kind { get => _kind; }
-    public int Level { get => _level; }
+    public Action<PartInfo> OnPress;
 
     [SerializeField] private Button _button;
     [SerializeField] private Image _preview;
 
-    private PartKind _kind;
-    private int _level;
+    private PartInfo _info;
 
 
 
     public void Initialize(PartKind kind, int level, Sprite preview, Color color)
     {
-        _kind = kind;
-        _level = level;
+        _info = new(kind, level);
         _preview.sprite = preview;
         _preview.color = color;
 
-        _button.onClick.AddListener(() => { OnPress?.Invoke(this); });
+        _button.onClick.AddListener(OnClickHandler);//this doesn't cause a heap allocation 
+    }
+
+
+
+    private void OnClickHandler()
+    {
+        OnPress?.Invoke(_info);
     }
 }

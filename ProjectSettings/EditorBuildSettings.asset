@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Shipyard.unity
     guid: c397aceb98714c8419349def306fce0b
   - enabled: 1
+    path: Assets/Scenes/WorldMap.unity
+    guid: 9346b8c39d23c7245a1d28f124fedd38
+  - enabled: 1
     path: Assets/Scenes/Space.unity
     guid: c834730a9a3dcd34ebdb9c7c6419c6fd
   - enabled: 1

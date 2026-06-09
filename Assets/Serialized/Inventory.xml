@@ -2,15 +2,15 @@
 <Inventory>
   <Item>
     <Kind>Iron</Kind>
-    <Count>0</Count>
+    <Count>1</Count>
   </Item>
   <Item>
     <Kind>Lead</Kind>
-    <Count>3</Count>
+    <Count>1</Count>
   </Item>
   <Item>
     <Kind>Uranium</Kind>
-    <Count>3</Count>
+    <Count>1</Count>
   </Item>
   <Item>
     <Kind>Copper</Kind>

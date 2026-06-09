@@ -3,6 +3,7 @@
     "com.annulusgames.lit-motion": "https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotion",
     "com.cysharp.r3": "https://github.com/Cysharp/R3.git?path=src/R3.Unity/Assets/R3.Unity",
     "com.cysharp.zlinq": "https://github.com/Cysharp/ZLinq.git?path=src/ZLinq.Unity/Assets/ZLinq.Unity",
+    "com.hissal.closures": "https://github.com/Hissal/Closures.git?path=Closures.Unity/Assets/Closures",
     "com.nuskey8.reactive-input-system": "https://github.com/nuskey8/ReactiveInputSystem.git?path=Assets/ReactiveInputSystem",
     "com.unity.collab-proxy": "2.11.2",
     "com.unity.entities": "1.4.7",

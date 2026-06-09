@@ -21,6 +21,7 @@ public class PlanetTilesHolder : MonoBehaviour
             return result;
         }
     }
+    public List<Tile> GeneratedTilesUnordered { get => _generatedTiles; }
     public int GridWidth { get => _gridWidth; }
     public int GridHeight { get => _gridHeight; }
 
@@ -36,6 +37,7 @@ public class PlanetTilesHolder : MonoBehaviour
 
 
 
+#if UNITY_EDITOR
     void OnValidate()
     {
         //TODO make this process preserve 2D positions
@@ -53,7 +55,6 @@ public class PlanetTilesHolder : MonoBehaviour
 
 
 
-#if UNITY_EDITOR
     [ContextMenu("GenerateTiles")]
     public void GenerateTiles()
     {

@@ -224,8 +224,8 @@ public static class Serializer
         XmlDocument quadrant = new();
         quadrant.Load(path);
 
-        XmlElement root = quadrant.DocumentElement;
-        foreach (XmlNode node in quadrant.ChildNodes)
+        XmlNode root = quadrant.DocumentElement;
+        foreach (XmlNode node in root.ChildNodes)
         {
             if (node.Name == "Kind")
                 kind = Enum.Parse<QuadrantKind>(node.InnerText);
@@ -241,13 +241,14 @@ public static class Serializer
                 foreach (XmlNode spawnableInfo in node.ChildNodes)
                 {
 
-                    if (spawnableInfo.Name == "SpawnableProbabilities")
+                    if (spawnableInfo.Name == "Spawnable")
                     {
                         SpawnableKind spawnableKind = default;
                         float probability = default;
 
                         foreach (XmlNode spawnableNode in spawnableInfo.ChildNodes)
                         {
+
                             if (spawnableNode.Name == "SpawnableKind")
                                 spawnableKind = Enum.Parse<SpawnableKind>(spawnableNode.InnerText);
 

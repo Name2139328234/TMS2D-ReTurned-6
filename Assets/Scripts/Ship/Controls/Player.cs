@@ -38,19 +38,21 @@ public class Player : MonoBehaviour
         Serializer.DeserializeShip(this);
         Serializer.DeserializeInventory(_inventory);
 
-        if (_isNonPlayableScene)
-            return;
 
         _cts = new CancellationTokenSource().AddTo(ref _disposables);
-
-        _input.Enable();
+        _input.Player.Select.Enable();
         _input.AddTo(ref _disposables);
 
 
+        if (_isNonPlayableScene)
+            return;
+
+
+
         var disposableMouseInput = _input.Player.Select
-            .StartedAsObservable(gameObject.GetCancellationTokenOnDestroy())
+            .StartedAsObservable(_cts.Token)
             .Select(context => Camera.main.ScreenToWorldPoint(context.ReadValue<Vector2>()))
-            .Subscribe(point => _target = point)
+            .Subscribe(point => SetTarget(point))
             .AddTo(ref _disposables);
 
 
@@ -66,7 +68,7 @@ public class Player : MonoBehaviour
     void OnDestroy()
     {
         _cts.Cancel();
-        _input.Disable();
+        _input.Player.Select.Disable();
         _disposables.Dispose();
     }
 
@@ -113,5 +115,9 @@ public class Player : MonoBehaviour
             engine.TorqueControl = Mathf.Sign(deltaAngle) * Mathf.Abs(deltaAngle / 180f);
             engine.ThrustControl = 1f - Mathf.Abs(deltaAngle / 180f);
         }
+    }
+    private void SetTarget(Vector3 target)
+    {
+        _target = target;
     }
 }

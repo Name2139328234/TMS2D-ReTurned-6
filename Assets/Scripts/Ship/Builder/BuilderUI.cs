@@ -1,6 +1,4 @@
-using Reflex.Attributes;
-using Reflex.Core;
-using Reflex.Injectors;
+using Closures;
 using UnityEngine;
 
 
@@ -12,8 +10,6 @@ public class BuilderUI : MonoBehaviour
     [SerializeField] private Vector2 _buttonDistance;
     [SerializeField] private GameObject _previewPrefab;
     [SerializeField] private BuilderButtonTip _tooltip;
-
-    [Inject] private Container _container;
 
 
 
@@ -29,16 +25,16 @@ public class BuilderUI : MonoBehaviour
                 var partSprite = level.GetComponent<SpriteRenderer>();
 
                 var preview = Instantiate(_previewPrefab, _canvas);
-                GameObjectInjector.InjectObject(preview, _container);
                 preview.transform.localPosition = new (x * _buttonDistance.x, y * _buttonDistance.y, 0);
 
                 var button = preview.GetComponent<BuilderButton>();
                 button.Initialize(partLevelsInfo.Kind, x, partSprite.sprite, partSprite.color);
-                button.OnPress += button =>
+
+                button.OnPress += Closure.Action<(Builder, BuilderButtonTip), PartInfo>((_builder, _tooltip), (builderInfo, partInfo) =>
                 {
-                    _builder.SelectedInfo = new PartInfo(button.Kind, button.Level);
-                    _tooltip.SetData(_builder.GetPriceInfo(button.Kind).GetLevelledCost(button.Level), button.Kind.ToString()); 
-                };
+                    builderInfo.Item1.SelectedInfo = partInfo;
+                    builderInfo.Item2.SetData(_builder.GetPriceInfo(partInfo.Kind).GetLevelledCost(partInfo.Level), partInfo.Kind.ToString());
+                }).AsAction();//TODO "AsAction" creates ~4ns processor overhead. Ask someone experienced whether or not I should consider alternatives
             }
         }
 

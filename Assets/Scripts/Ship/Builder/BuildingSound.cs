@@ -1,3 +1,4 @@
+using Closures;
 using UnityEngine;
 
 
@@ -11,7 +12,13 @@ public class BuildingSound : MonoBehaviour
 
     void Start()
     {
-        _builder.OnBuild += args => { if (args.IsPriced) _buildSound.Play(); };
-        _builder.OnUnbuild += args => { if (args.IsPriced) _unbuildSound.Play(); };
+        _builder.OnBuild += Closure.Action<AudioSource, BuildingArgs>(_buildSound, (sound, args) =>
+        {
+            if (args.IsPriced) sound.Play();
+        }).AsAction();
+        _builder.OnUnbuild += Closure.Action<AudioSource, BuildingArgs>(_unbuildSound, (sound, args) =>
+        {
+            if (args.IsPriced) sound.Play();
+        }).AsAction();
     }
 }

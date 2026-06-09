@@ -6,12 +6,12 @@ using UnityEngine.EventSystems;
 
 public class ButtonSound : MonoBehaviour, IPointerEnterHandler
 {
-    [Inject] private ButtonAudioStorage _audio;
+    private AudioSource _audio;
 
 
 
     public void OnPointerEnter(PointerEventData eventData)
     { 
-        _audio.Play();
+        //_audio.Play();
     }
 }
